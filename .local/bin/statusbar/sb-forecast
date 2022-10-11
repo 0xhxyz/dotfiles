@@ -1,0 +1,19 @@
+#!/bin/sh
+
+weatherreport="~/.weatherreport"
+getforecast() { curl 'wttr.in/Manouba?FTQ1' -s > "$weatherreport" || exit 1 ;}
+
+showweather() {
+echo -n ☔$(cat ~/.weatherreport | sed -n 14p | sed -e 's/^[[^m]*m//g' | grep -o "[0-9]*%" | sort -n | sed -e '$!d')
+
+echo -n ' '
+
+echo -n $(cat ~/.weatherreport | sed -n 11p| sed -e 's/^[[^m]*m//g;s/ /\n/g;s/°C//g;/^s*$/d' | grep -o "[0-9]*" | sort -n | sed -e 1b -e '$!d'| tr '\n' ' ' | awk '{print "🥶"$1 "°","🌞"$2 "°"}')
+}
+case $BLOCK_BUTTON in
+	1) setsid -f "$TERMINAL" -e less -Srf "$weatherreport" ;;
+	2) getforecast && showweather ;;
+    6) "$TERMINAL" -e "$EDITOR" "$0" ;;
+esac
+
+showweather

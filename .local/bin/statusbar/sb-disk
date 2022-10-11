@@ -1,0 +1,18 @@
+#!/bin/sh
+
+location=${1:-/}
+
+[ -d "$location" ] || exit
+
+case $BLOCK_BUTTON in
+	1) notify-send "💽 Disk space" "$(df -h)" ;;
+	6) "$TERMINAL" -e "$EDITOR" "$0" ;;
+esac
+
+case "$location" in
+	"/home"* ) icon="🏠" ;;
+	"/mnt"* ) icon="💾" ;;
+	*) icon="🖥";;
+esac
+
+printf "%s%s\n" "$icon" "$(df -h "$location" | awk ' /[0-9]/ {print $3 "/" $2}')"

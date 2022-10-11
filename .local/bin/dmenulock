@@ -1,0 +1,11 @@
+#!/bin/bash
+
+RET=$(echo -e "🛑 shutdown\n🟢 reboot\n🔒 lock\n🚪 logout\ncancel" | dmenu )
+
+case $RET in
+    '🔒 lock') slock ;;
+	'🛑 shutdown') shutdown now ;;
+	'🟢 reboot') reboot ;;
+	'🚪 logout') killall dwm ;;
+	*) ;;
+esac

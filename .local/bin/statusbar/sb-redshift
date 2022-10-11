@@ -1,0 +1,9 @@
+#!/bin/sh
+
+case $BLOCK_BUTTON in
+    1) redshift -O 8000 ;;
+	3) redshift -x ;;
+    6) "$TERMINAL" -e "$EDITOR" "$0" ;;
+esac
+
+echo -n '👀🔦'

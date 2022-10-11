@@ -1,0 +1,13 @@
+#!/bin/sh
+
+case $BLOCK_BUTTON in
+	1)     notify-send "CPU Temperature: $(sensors | awk '/^CPU:/ {print $2}')";notify-send "🧠 CPU hogs" "$(ps axch -o cmd:40,%cpu --sort=-%cpu | head)\\n(100% per core)" ;;
+	2) setsid -f "$TERMINAL" -e htop ;;
+	6) "$TERMINAL" -e "$EDITOR" "$0" ;;
+esac
+
+cpu_idle=`top -b -n 1 | grep Cpu | awk '{print $8}'|cut -f 1 -d "."`
+cpu_use=`expr 100 - $cpu_idle`
+echo -n '🧠'
+echo -n $cpu_use
+echo -n %
