@@ -125,7 +125,6 @@ alias \
 	c='clear' \
 	hist='less $HISTFILE' \
 	gparted='sudo gparted' \
-	dmenu_run='dmenu_run -nb "#1d2021" -sf "#282828" -sb "#fbf1c7" -nf "#cfc6a1"' \
     gs='git status' \
     ga='git add' \
     gm='git commit -m' \
