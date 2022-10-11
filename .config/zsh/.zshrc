@@ -116,7 +116,6 @@ alias \
 	xr="sudo xbps-remove -R" \
 	xq="xbps-query" \
 	z="zathura" \
-	ls='ls --color=auto' \
 	ll='ls -lh --color=auto' \
 	la='ls -a --color=auto' \
 	lla='ls -lah --color=auto' \
@@ -126,7 +125,6 @@ alias \
 	c='clear' \
 	hist='less $HISTFILE' \
 	gparted='sudo gparted' \
-	ei3='nvim ~/.config/i3/config' \
 	dmenu_run='dmenu_run -nb "#1d2021" -sf "#282828" -sb "#fbf1c7" -nf "#cfc6a1"' \
     gs='git status' \
     ga='git add' \
