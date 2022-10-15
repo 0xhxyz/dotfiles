@@ -17,12 +17,15 @@ syncthing --no-browser &
 
 #xrdb ${XDG_CONFIG_HOME:-$HOME/.config}/x11/xresources & xrdbpid=$!	# Uncomment to use Xresources colors/settings on startup
 
-autostart="mpd picom dunst pipewire firefox obsidian"
+autostart="picom dunst pipewire firefox obsidian"
+#setsid -f "$TERMINAL" -e cava
 # unclutter
 
 for program in $autostart; do
 	pidof -s "$program" || "$program" &
 done >/dev/null 2>&1
+
+mpd
 
 # Ensure that xrdb has finished running before moving on to start the WM/DE.
 #[ -n "$xrdbpid" ] && wait "$xrdbpid"
