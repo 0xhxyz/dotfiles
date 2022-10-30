@@ -11,7 +11,7 @@ My dotfiles, mainly:
 ## Preview
 Theme: [Gruvbox](https://github.com/morhetz/gruvbox)
 
-![dotfiles](https://user-images.githubusercontent.com/87134721/195083794-b0e24d74-89a6-49ab-9655-2c5222bde1bc.jpg)
+![Untitled](https://user-images.githubusercontent.com/87134721/198820028-9318f331-7b6b-4f2c-921a-028c075b05c5.jpg)
 
 ## Installation
 To have this setup on arch linux distros you could use my [archinstall script](https://github.com/airkn/archinstall)
