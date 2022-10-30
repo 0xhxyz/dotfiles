@@ -77,6 +77,8 @@ bindkey -s '^a' '^ubc -lq\n'
 
 bindkey -s '^f' '^ucd "$(dirname "$(fzf)")"\n'
 
+bindkey -s '^x' '^uao\n'
+
 bindkey '^[[P' delete-char
 
 # Edit line in vim with ctrl-e:
@@ -130,6 +132,8 @@ alias \
     gm='git commit -m' \
     gp='git push' \
     sst='sudo systemctl' \
+    cdf='~/files/programs/problems/codeforces' \
+    ao='./a.out && read && exit' \
 
 alias \
 	lf="lfub" \
