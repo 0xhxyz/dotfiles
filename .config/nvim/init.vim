@@ -68,7 +68,8 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 nnoremap <C-a> :%y<CR>
 nnoremap <C-x> :!g++ -O2 -Wall % && setsid st -e<CR> <CR>
-nnoremap <C-s> :%s//g<Left><Left>
+nnoremap <C-s> :w<CR>
+nnoremap <C-f> :%s//g<Left><Left>
 nnoremap <silent> <C-t> :tabnew<CR>
 
 autocmd BufWritePre * %s/\s\+$//e

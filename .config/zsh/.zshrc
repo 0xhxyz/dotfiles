@@ -133,7 +133,7 @@ alias \
     gp='git push' \
     sst='sudo systemctl' \
     cdf='~/files/programs/problems/codeforces' \
-    ao='./a.out && read && exit' \
+    ao='./a.out && read && rm a.out && exit' \
 
 alias \
 	lf="lfub" \
