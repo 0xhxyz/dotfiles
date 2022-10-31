@@ -55,7 +55,10 @@ set number
 
 set wildmode=longest,list,full
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-vnoremap . :normal .<CR>
+
+vnoremap n :norm<Space>
+vnoremap c :norm<Space>0i//<CR>
+vnoremap . :norm .<CR>
 
 map <leader>n :NERDTreeToggle<CR>
 
@@ -71,6 +74,7 @@ nnoremap <C-x> :!g++ -O2 -Wall % && setsid st -e<CR> <CR>
 nnoremap <C-s> :w<CR>
 nnoremap <C-f> :%s//g<Left><Left>
 nnoremap <silent> <C-t> :tabnew<CR>
+"inoremap {<CR> {<CR><CR>}<Up>
 
 autocmd BufWritePre * %s/\s\+$//e
 
@@ -81,4 +85,3 @@ autocmd BufWritePre * %s/\s\+$//e
 
 " Recompile dwmblocks on config edit.
 	autocmd BufWritePost ~/.local/src/dwmblocks/config.h !cd ~/.local/src/dwmblocks/; sudo make install && { killall -q dwmblocks;setsid -f dwmblocks }
-
