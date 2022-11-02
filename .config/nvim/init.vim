@@ -57,7 +57,7 @@ set wildmode=longest,list,full
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 vnoremap n :norm<Space>
-vnoremap c :norm<Space>0i//<CR>
+vnoremap a :norm<Space>0i//<CR>
 vnoremap . :norm .<CR>
 
 map <leader>n :NERDTreeToggle<CR>
