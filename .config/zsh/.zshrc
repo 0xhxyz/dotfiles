@@ -134,6 +134,8 @@ alias \
     sst='sudo systemctl' \
     cdf='~/files/programs/problems/codeforces' \
     ao='./a.out && read && rm a.out && exit' \
+    code='vscodium' \
+    rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'" \
 
 alias \
 	lf="lfub" \
