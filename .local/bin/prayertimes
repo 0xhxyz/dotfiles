@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cat ~/.prayertimes | jq . | head -13 | tail -8 | sed 's/"//g' | sed 's/,//g' | sed 's/ //g'
+

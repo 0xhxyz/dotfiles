@@ -12,6 +12,8 @@ xset -b
 
 curl 'wttr.in/Manouba?FTQ1' -s > ~/.weatherreport
 
+curl --output .prayertimes https://api.aladhan.com/v1/timingsByAddress/$(date '+%F')?address=Manouba&method=1
+
 syncthing --no-browser &
 
 
