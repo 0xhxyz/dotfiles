@@ -20,6 +20,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-commentary'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
+Plug 'andweeb/presence.nvim'
 call plug#end()
 
 let g:Hexokinase_highlighters = ['backgroundfull']
@@ -70,7 +71,8 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 nnoremap <C-a> :%y<CR>
-nnoremap <C-x> :!g++ -O2 -Wall % && setsid st -e<CR> <CR>
+nnoremap <C-x> :!g++ -std=c++17 -Wshadow -Wall % -O2 -Wno-unused-result && setsid st -e<CR>
+nnoremap <C-w> :!g++ -std=c++17 -Wshadow -Wall % -g -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG && setsid st -e<CR>
 nnoremap <C-s> :w<CR>
 nnoremap <C-f> :%s//g<Left><Left>
 nnoremap <silent> <C-t> :tabnew<CR>

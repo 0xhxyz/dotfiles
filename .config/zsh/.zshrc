@@ -42,6 +42,7 @@ done; unset command
 
 se() { cd ~/.local/bin; $EDITOR $(fzf) ;}
 
+ulimit -s 2000123
 
 ## Change cursor shape for different vi modes.
 #function zle-keymap-select () {
