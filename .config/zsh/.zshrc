@@ -136,6 +136,8 @@ alias \
     cdf='~/files/programs/problems/codeforces' \
     ao='./a.out && read && rm a.out && exit' \
     code='vscodium' \
+    anime='ani-cli' \
+    manga='mangal' \
     rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'" \
 
 alias \
