@@ -1,8 +1,8 @@
 # DO NOT EDIT! This file will be overwritten by LXAppearance.
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
-include "~/.gtkrc-2.0.mine"
-gtk-theme-name="Matcha-dark-pueril"
+include "/home/air/.gtkrc-2.0.mine"
+gtk-theme-name="Adwaita-dark"
 gtk-icon-theme-name="Adwaita"
 gtk-font-name="Noto Sans Modi 9"
 gtk-cursor-theme-name="xcursor-breeze"
