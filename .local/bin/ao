@@ -1,0 +1,13 @@
+#!/bin/sh
+x="x"
+i=1
+while [ "$x" != "q" ]
+do
+  echo "execution " $i
+  ./a.out
+  i=$((i+1))
+  echo '\n'
+  read x
+done
+rm a.out
+

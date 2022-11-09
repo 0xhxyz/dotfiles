@@ -134,7 +134,7 @@ alias \
     gp='git push' \
     sst='sudo systemctl' \
     cdf='~/files/programs/problems/codeforces' \
-    ao='./a.out && read && rm a.out && exit' \
+    ao='ao && exit' \
     code='vscodium' \
     anime='ani-cli' \
     manga='mangal' \
