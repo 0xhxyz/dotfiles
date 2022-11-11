@@ -139,6 +139,7 @@ alias \
     anime='ani-cli' \
     manga='mangal' \
     rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'" \
+    mssql="sudo /opt/mssql/bin/sqlservr" \
 
 alias \
 	lf="lfub" \
