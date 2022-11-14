@@ -1,9 +1,10 @@
 #!/bin/sh
 
 case $BLOCK_BUTTON in
-	1) notify-send "⚡scroll to change adjust xbacklight⚡" ;;
-	4) xbacklight -inc 10 ;;
-	5) xbacklight -dec 10 ;;
+	1) setsid -f "$TERMINAL" -e sudo powertop ;;
+	# 1) notify-send "⚡scroll to change adjust xbacklight⚡" ;;
+	# 4) xbacklight -inc 10 ;;
+	# 5) xbacklight -dec 10 ;;
 	6) "$TERMINAL" -e "$EDITOR" "$0" ;;
 esac
 
