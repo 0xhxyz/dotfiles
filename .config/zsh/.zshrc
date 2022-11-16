@@ -136,10 +136,12 @@ alias \
     cdf='~/files/programs/problems/codeforces' \
     ao='ao && exit' \
     code='vscodium' \
-    anime='ani-cli' \
-    manga='mangal' \
     rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'" \
     mssql="sudo /opt/mssql/bin/sqlservr" \
+    pkgsizesort='expac "%n %m" -l"\n" -Q $(pacman -Qq) | sort -rhk 2' \
+    scim="sc-im" \
+    ytm="ytfzf -m" \
+    ytdw="ytfzf -d" \
 
 alias \
 	lf="lfub" \
