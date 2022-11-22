@@ -142,6 +142,8 @@ alias \
     scim="sc-im" \
     ytm="ytfzf -m" \
     ytdw="ytfzf -d" \
+    asg="sudo pacman -Sg | grep archstrike" \
+    asgg="sudo pacman -Sgg | grep " \
 
 alias \
 	lf="lfub" \
