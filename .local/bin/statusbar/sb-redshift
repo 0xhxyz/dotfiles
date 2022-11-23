@@ -2,7 +2,8 @@
 
 case $BLOCK_BUTTON in
     1) redshift -O 5000 ;;
-	3) redshift -x ;;
+	2) redshift -x ;;
+	3) redshift -O 10000;;
     6) "$TERMINAL" -e "$EDITOR" "$0" ;;
 esac
 

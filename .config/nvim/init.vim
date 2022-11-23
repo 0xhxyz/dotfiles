@@ -28,7 +28,7 @@ let g:Hexokinase_highlighters = ['backgroundfull']
 
 let g:gruvbox_termcolors=16
 set bg=dark
-let g:gruvbox_italic=1
+let g:gruvbox_italic=0
 colo gruvbox8
 autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE
 
