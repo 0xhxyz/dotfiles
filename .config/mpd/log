@@ -2545,3 +2545,5 @@ Nov 23 22:28 : player: played "lofi-hiphop-chill/Lazy Sunday/8 brillion - Kiptim
 Nov 23 22:28 : exception: Failed to open "pulse" (pipewire); Failed to connect stream: Host is down
 Nov 23 22:30 : player: played "lofi-hiphop-chill/Ivylake - Moonfern/01. Settle Down_master.mp3"
 Nov 23 22:30 : exception: Failed to open "pulse" (pipewire); Failed to connect stream: Host is down
+Nov 23 22:33 : player: played "lofi-hiphop-chill/Hoogway - Equation of Time/B1. Planet Earth.mp3"
+Nov 23 22:33 : exception: Failed to open "pulse" (pipewire); Failed to connect stream: Host is down

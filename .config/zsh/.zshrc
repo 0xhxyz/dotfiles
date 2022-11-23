@@ -134,6 +134,9 @@ alias \
     gp='git push' \
     sst='sudo systemctl' \
     cdf='~/files/programs/problems/codeforces' \
+    cdc='~/.local/src' \
+    ev='v ~/.config/nvim/init.vim' \
+    ez='v ~/.zshrc' \
     ao='ao && exit' \
     code='vscodium' \
     rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'" \
