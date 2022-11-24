@@ -137,6 +137,7 @@ alias \
     cdc='~/.local/src' \
     ev='v ~/.config/nvim/init.vim' \
     ez='v ~/.zshrc' \
+    es='v ~/portal/share' \
     ao='ao && exit' \
     code='vscodium' \
     rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'" \
