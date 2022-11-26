@@ -70,9 +70,9 @@ lfcd () {
         [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
     fi
 }
-bindkey -s '^o' '^ulfcd\n'
+bindkey -s '^s' '^ulfcd\n'
 
-bindkey -s '^p' '^usxb\n'
+bindkey -s '^r' '^usxb 2> /dev/null\n'
 
 bindkey -s '^a' '^ubc -lq\n'
 
