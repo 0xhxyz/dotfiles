@@ -80,10 +80,6 @@ nnoremap <silent> <C-t> :tabnew<CR>
 
 autocmd BufWritePre * %s/\s\+$//e
 
+cabbrev w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 
-" Save file as sudo on files that require root permission
-	cabbrev w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
-
-
-" Recompile dwmblocks on config edit.
-	autocmd BufWritePost ~/.local/src/dwmblocks/config.h !cd ~/.local/src/dwmblocks/; sudo make install && { killall -q dwmblocks;setsid -f dwmblocks }
+autocmd BufWritePost ~/.local/src/dwmblocks/config.h !cd ~/.local/src/dwmblocks/; sudo make install && { killall -q dwmblocks;setsid -f dwmblocks }

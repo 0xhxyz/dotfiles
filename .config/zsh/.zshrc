@@ -139,7 +139,6 @@ alias \
     ez='v ~/.zshrc' \
     es='v ~/portal/share' \
     ao='ao && exit' \
-    code='vscodium' \
     rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'" \
     mssql="sudo /opt/mssql/bin/sqlservr" \
     pkgsizesort='expac "%n %m" -l"\n" -Q $(pacman -Qq) | sort -rhk 2' \
@@ -149,6 +148,11 @@ alias \
     psu="sudo pacman -Syu" \
     asg="sudo pacman -Sg | grep archstrike" \
     asgg="sudo pacman -Sgg | grep " \
+    5m="termdown 5m" \
+    10m="termdown 10m" \
+    1h="termdown 1h" \
+    2h="termdown 2h" \
+    tm="termdown" \
 
 alias \
 	lf="lfub" \
