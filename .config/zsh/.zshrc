@@ -148,10 +148,10 @@ alias \
     psu="sudo pacman -Syu" \
     asg="sudo pacman -Sg | grep archstrike" \
     asgg="sudo pacman -Sgg | grep " \
-    5m="termdown 5m" \
-    10m="termdown 10m" \
-    1h="termdown 1h" \
-    2h="termdown 2h" \
+    5m="termdown 5m && notify-send '5 minutes over'" \
+    10m="termdown 10m && notify-send '10 minutes over'" \
+    1h="termdown 1h && notify-send '1 hour over'" \
+    2h="termdown 2h && notify-send '2 hours over'" \
     tm="termdown" \
 
 alias \
