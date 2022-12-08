@@ -73,6 +73,7 @@ map <C-l> <C-w>l
 nnoremap <C-a> :%y<CR>
 nnoremap <C-x> :!g++ -std=c++17 -Wshadow -Wall % -O2 -Wno-unused-result && setsid st -e<CR>
 nnoremap <C-w> :!g++ -std=c++17 -Wshadow -Wall % -g -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG && setsid st -e<CR>
+nnoremap <C-q> :read /home/air/files/programs/problems/mytemplate.cpp<CR>i<BS><Esc>/overhere<CR>dwi<Tab>
 nnoremap <C-s> :w<CR>
 nnoremap <C-f> :%s//g<Left><Left>
 nnoremap <silent> <C-t> :tabnew<CR>
