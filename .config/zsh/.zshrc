@@ -132,6 +132,7 @@ alias \
 	c='clear' \
 	hist='less $HISTFILE' \
 	gparted='sudo gparted' \
+    fm='pcmanfm' \
     gs='git status' \
     ga='git add' \
     gm='git commit -m' \
@@ -139,6 +140,7 @@ alias \
     sst='sudo systemctl' \
     cdf='~/files/programs/problems/codeforces' \
     cdc='~/.local/src' \
+    cdb='~/.local/bin' \
     ev='v ~/.config/nvim/init.vim' \
     ez='v ~/.zshrc' \
     es='v ~/portal/share' \
