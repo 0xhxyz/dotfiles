@@ -4073,3 +4073,225 @@ Dec 09 14:27 : player: played "lofi-hiphop-chill/Hoogway - Equation of Time/B1. 
 Dec 09 14:31 : player: played "lofi-hiphop-chill/3 am study session/22 brillion. - Crescent (Kupla Master) (1).mp3"
 Dec 09 14:33 : player: played "lofi-hiphop-chill/Mondo Loops - Foret Kingdom/Overgrown Piano [Master] .mp3"
 Dec 09 23:50 : player: played "lofi-hiphop-chill/4 A.M Study Session/A1- 01 Purrple Cat - Snooze Button (Kupla Master) (1).mp3"
+Dec 19 15:03 : exception: inotify_add_watch() has failed: No such file or directory
+Dec 19 15:16 : exception: inotify_add_watch() has failed: No such file or directory
+Dec 19 16:04 : exception: inotify_add_watch() has failed: No such file or directory
+Dec 19 16:22 : exception: inotify_add_watch() has failed: No such file or directory
+Dec 19 16:30 : exception: inotify_add_watch() has failed: No such file or directory
+Dec 19 22:01 : exception: inotify_add_watch() has failed: No such file or directory
+Dec 20 09:02 : exception: inotify_add_watch() has failed: No such file or directory
+Dec 20 09:41 : exception: inotify_add_watch() has failed: No such file or directory
+Dec 21 09:43 : exception: inotify_add_watch() has failed: No such file or directory
+Dec 21 10:51 : exception: inotify_add_watch() has failed: No such file or directory
+Dec 21 12:16 : exception: inotify_add_watch() has failed: No such file or directory
+Dec 22 13:52 : exception: inotify_add_watch() has failed: No such file or directory
+Dec 23 15:41 : exception: inotify_add_watch() has failed: No such file or directory
+Dec 24 10:49 : exception: inotify_add_watch() has failed: No such file or directory
+Dec 24 14:22 : exception: inotify_add_watch() has failed: No such file or directory
+Dec 24 22:16 : exception: Failed to open /home/air/.config/mpd/playlists: No such file or directory
+Dec 24 22:16 : exception: Failed to decode /home/air/music/lofi-hiphop-chill/3 am study session/01 No Spirit - Glowing lights (Kupla Master) (1).mp3; Failed to open '/home/air/music/lofi-hiphop-chill/3 am study session/01 No Spirit - Glowing lights (Kupla Master) (1).mp3': No such file or directory
+Dec 24 22:16 : player: played "lofi-hiphop-chill/3 am study session/01 No Spirit - Glowing lights (Kupla Master) (1).mp3"
+Dec 24 22:16 : update: removing lofi-hiphop-chill/3 am study session/01 No Spirit - Glowing lights (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/3 am study session/02 dryhope - somewhere else (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/3 am study session/04 Casiio _ Sleepermane - Phantasm (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/3 am study session/03 Eisu - sheets (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/3 am study session/10 Phlocalyst _ Living Room - Feelings (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/3 am study session/09 Casiio _ Sleepermane - Signals (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/3 am study session/08 epektase x j_san - contemplation (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/3 am study session/07 Sebastian Kamae _ Intoku - Lucid (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/3 am study session/06 Tenno - Luna (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/3 am study session/05 Project AER x WYS - after sunset (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/MP3 - Compilation 7 - Soothing Breeze/16 Otaam x C4C - Tsuyu (Kupla Master).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/MP3 - Compilation 7 - Soothing Breeze/15 Purrple Cat - Neon Tiger (Kupla Master).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/MP3 - Compilation 7 - Soothing Breeze/14 BVG - The Path You Choose (Kupla Master).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/MP3 - Compilation 7 - Soothing Breeze/13 Yestalgia X Loafy Building - West Of Zhuhai (Kupla Master).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/MP3 - Compilation 7 - Soothing Breeze/12 Kanisan - Until Dawn (Kupla Master 2.0).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/MP3 - Compilation 7 - Soothing Breeze/11 Dryhope - Wander (Kupla Master).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/MP3 - Compilation 7 - Soothing Breeze/10 Sweet Medicine - Lushan Sun (Kupla Master).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/MP3 - Compilation 7 - Soothing Breeze/09 Midnight Alpha - Winter Gardens (w Nothingtosay) (Kupla Master).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/MP3 - Compilation 7 - Soothing Breeze/08 Celestial Alignment - The View From The Monastery (Kupla Master).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/MP3 - Compilation 7 - Soothing Breeze/07 Raimu _ DaniSogen - In Love With The Sky (Kupla Master).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/MP3 - Compilation 7 - Soothing Breeze/06 Purrple Cat - Mystic Mountain (Kupla Master).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/MP3 - Compilation 7 - Soothing Breeze/05 jhove - shibui (Kupla Master).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/MP3 - Compilation 7 - Soothing Breeze/04 Ambulo - Windmills  (Kupla Master).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/MP3 - Compilation 7 - Soothing Breeze/03 Raimu _ Tophat Panda - Kaigan (Kupla Master).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/MP3 - Compilation 7 - Soothing Breeze/02 Tenno - The Guiding Wind (Kupla Master).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/MP3 - Compilation 7 - Soothing Breeze/01 Tibeauthetraveler - Cherry Tree (Kupla Master).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Mondo Loops x L'aiguille - Nature's Beauty/The Road Home [Master].mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Mondo Loops x L'aiguille - Nature's Beauty/Lost Touch [Master].mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Mondo Loops x L'aiguille - Nature's Beauty/Lost And Found [Master].mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Mondo Loops x L'aiguille - Nature's Beauty/Imprefect Dust [Master].mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Mondo Loops x L'aiguille - Nature's Beauty/Dancing In The Dark [Master] .mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Mondo Loops - Foret Kingdom/Visions in the swamp [Master] .mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Mondo Loops - Foret Kingdom/The Road Goes Even On [Master] .mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Mondo Loops - Foret Kingdom/The Lasting Memory [ Master ].mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Mondo Loops - Foret Kingdom/Savoured Breath [Master] .mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Mondo Loops - Foret Kingdom/Overgrown Piano [Master] .mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Mondo Loops - Foret Kingdom/Luthien_s Song [Master] .mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Mondo Loops - Foret Kingdom/Lofi Lullaby [Master] .mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Mondo Loops - Foret Kingdom/Desert Winds [Master].mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Mondo Loops - Foret Kingdom/Ancient Map [Master].mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Loafy Building - Butterflies/5. Glass Currents.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Loafy Building - Butterflies/4. Yuzu (feat. Living Room).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Loafy Building - Butterflies/3. From Within (feat. Hoogway).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Loafy Building - Butterflies/2. Butterflies (feat. Mondo Loops).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Loafy Building - Butterflies/1. Glistening.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Lazy Sunday/9 Monma x Cocabona - Garnet (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Lazy Sunday/8 brillion - Kiptime w HM surf (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Lazy Sunday/7 Elior x eaup - Cruisin_ (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Lazy Sunday/6 jhove x trxxshed - over the valley (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Lazy Sunday/5 Aso - Teakwood (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Lazy Sunday/4 Allem Iversom - Habits (Kupla Master (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Lazy Sunday/31 Elior - Ponds (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Lazy Sunday/30 chiccotes - before (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Lazy Sunday/3 hoogway - Eternal life (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Lazy Sunday/29 kanisan - Astral Walker ft mondoloops (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Lazy Sunday/28 lofty x pointy features - psilo (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Lazy Sunday/27 kainbeats - Quilted Dreams (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Lazy Sunday/26 Eisu x softy - Snowflakes (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Lazy Sunday/25 Mondoloops - Wandering Another World (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Lazy Sunday/24 Nospirit x Fatb - Desire (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Lazy Sunday/23 Yasumu - Untold Stories (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Lazy Sunday/22 Glimlip x Sleepermane - Nostalgia (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Lazy Sunday/21 Glimlip x Yasper - Floating Away (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Lazy Sunday/20 Otaam x Sitting Duck - vivid memories (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Lazy Sunday/2 towerz x spencer hunt - pillows (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Lazy Sunday/19 Kupla - Soft to Touch (first master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Lazy Sunday/18 DLJ x TABAL - 3 am (Kupla Master).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Lazy Sunday/17 mell-ø x Phlocalyst - Nautilus (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Lazy Sunday/16 G Mills x HM surf - Mmmm (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Lazy Sunday/15 Dr Dundiff - Pink Night Sky (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Lazy Sunday/14 Thaehan - Remorse (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Lazy Sunday/13 Blue Wednesday - Dont let go w tender spring (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Lazy Sunday/12 Casiio - Stray (Kupla Master2) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Lazy Sunday/11 tender spring - diet cola w middle school (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Lazy Sunday/10 Celestial Alignment - building a new life (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Lazy Sunday/1 jhove - it all (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Krynoze - Pawmises/Pawmises (ft. Hoogway).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Krynoze - Pawmises/Life Changing (ft. Juliàn).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Krynoze - Pawmises/Furry Love (ft. Tibeauthetraveler _ Banks).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Krynoze - Pawmises/Expressive Emotions (ft. Dimension 32 _ Strong.AL_).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Krynoze - Pawmises/Companion (ft. Goson).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Krynoze - Pawmises/Big Eyes (ft. Mondo Loops _ Juliàn).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Krynoze - Pawmises/Best Friend (ft. Hoogway).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Kanisan x Mau - Les jours d'après/8. accords de minuit (ft. Quist).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Kanisan x Mau - Les jours d'après/7. crossed paths.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Kanisan x Mau - Les jours d'après/6. vagabond.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Kanisan x Mau - Les jours d'après/5. constellation (ft. ØDYSSEE).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Kanisan x Mau - Les jours d'après/4. dunes.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Kanisan x Mau - Les jours d'après/3. rose_s plaid.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Kanisan x Mau - Les jours d'après/2. les jours d_après.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Kanisan x Mau - Les jours d'après/1. a sign from her.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Ivylake - Moonfern/05. As Time Goes By_master.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Ivylake - Moonfern/04. Moonfern_master.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Ivylake - Moonfern/03. Restful_master.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Ivylake - Moonfern/02. Adrift_master.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Ivylake - Moonfern/01. Settle Down_master.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Hoogway - Equation of Time/B5. Ultima Ola.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Hoogway - Equation of Time/B4. Opening.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Hoogway - Equation of Time/B3. World Within.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Hoogway - Equation of Time/B2. Orion.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Hoogway - Equation of Time/B1. Planet Earth.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Hoogway - Equation of Time/A6. Eternity.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Hoogway - Equation of Time/A5. Memento.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Hoogway - Equation of Time/A4. Equation Of Time.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Hoogway - Equation of Time/A3. Someone I_ve Lost.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Hoogway - Equation of Time/A2. Found You.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Hoogway - Equation of Time/A1. 28th Of May.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/eugenio izzi - Necessary Changes/8. Goodbye my friend (feat. Hoogway).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/eugenio izzi - Necessary Changes/7. Keep in touch (feat. Sweet Medicine).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/eugenio izzi - Necessary Changes/6. Allow yourself to be wrong (feat. Mondo Loops).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/eugenio izzi - Necessary Changes/5. Suddenly, the fire (feat Kanisan).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/eugenio izzi - Necessary Changes/4. Day by day, looking for you (feat. Ambulo).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/eugenio izzi - Necessary Changes/3. Vibrant feelings.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/eugenio izzi - Necessary Changes/2. Dream surfers.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/eugenio izzi - Necessary Changes/1. Never be prey to the winds.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Casiio - Far Off/7. Casiio - Ava.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Casiio - Far Off/6. Casiio - Nox.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Casiio - Far Off/5. Casiio - Jupiter Moons.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Casiio - Far Off/4. Casiio - Echoes.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Casiio - Far Off/3. Casiio - Ancestral.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Casiio - Far Off/2. Casiio - Waves.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Casiio - Far Off/1. Casiio - Volumn.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/4 A.M Study Session/D7 - 25 Living Room - Rainbowsend (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/4 A.M Study Session/D6 - 24 Sebastian Kamae - Midsummer (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/4 A.M Study Session/D5 - 23 arbour - patience (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/4 A.M Study Session/D4 - 22 amies _ cxlt - Imaginary (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/4 A.M Study Session/D3 - 21 Chiccotes Beats x Pueblo Vista - Lullaby (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/4 A.M Study Session/D2 - 20 cxlt - everything went quiet (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/4 A.M Study Session/D1 - 19 Mondo Loops - Shimmering Nights (With Yasumu) (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/4 A.M Study Session/C6 - 18 kanisan x hoogway - drowning (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/4 A.M Study Session/C5 - 17 Ky Akasha - Night Drive (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/4 A.M Study Session/C4 - 16 sleepermane x sling dilly - shimmer (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/4 A.M Study Session/C3 - 15 Dryhope - Voyager (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/4 A.M Study Session/C2 - 14 Yasumu - Sunsets (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/4 A.M Study Session/C1 - 13 lilac - nemui (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/4 A.M Study Session/B6 - 12 Miramare _ Clément Matrat - Drowsy Town (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/4 A.M Study Session/B5 - 11 L_outlander - Night Walk Ft Kanisan (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/4 A.M Study Session/B4 - 10 Loland x Nokiaa x Tom Doolie - Alaska (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/4 A.M Study Session/B3 - 09 No Spirit - Carry Me (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/4 A.M Study Session/B2 - 08 Thaehan - Secret Garden (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/4 A.M Study Session/B1 - 07 Kayou - Im Fine (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/4 A.M Study Session/A6 - 06 Tenno - Sayonara (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/4 A.M Study Session/A5 - 05 amies - above the clouds (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/4 A.M Study Session/A4 - 04 Dontcry _ Nokiaa - Bliss (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/4 A.M Study Session/A3 - 03 jhove - counting sheep (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/4 A.M Study Session/A2 - 02 Tom Doolie - Parallel feat lōland (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/4 A.M Study Session/A1- 01 Purrple Cat - Snooze Button (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/3 am study session/24 Mondoloops - Drifting Far Away (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/3 am study session/23 less.people - persist (Kupla Master2).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/3 am study session/22 brillion. - Crescent (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/3 am study session/21 towerz - fateful slumber (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/3 am study session/20 Mondo Loops x Kanisan - Escape Route (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/3 am study session/19 cxlt. - fade away (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/3 am study session/18 Yasumu - Recharge (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/3 am study session/17 H.1 - Timeless (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/3 am study session/16 Kanisan x Frad - Fireflies (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/3 am study session/15 Ambulo - Night Bus (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/3 am study session/14 TABAL x mell-ø - Weightless (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/3 am study session/13 Comodo - Numb (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/3 am study session/12 SwuM x chief. - Show Me How (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/3 am study session/11 Pandrezz - Blind Forest (Kupla Master) (1).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Study/26 Kinissue x Softy x Redmatic - Serenity.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Study/25 no one_s perfect x Mondo Loops - Ceres Calls.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Study/24 jhove x cxlt. - take me far away.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Study/23 Sleepermane x Sling Dilly - Hue.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Study/22 hm surf - Fancy Brew.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Study/21 Casiio x Dontcry - Sleeping In.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Study/20 Diiolme x l_Outlander - Arizona Night.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Study/19 Loafy Building x Amess - Littlewood.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Study/18 Kaspa x Piotr Wiese - Baltic Sea Cruise.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Study/17 Bcalm x Softy x Banks - Cozy.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Study/16 Team Astro - Last Call_.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Study/15 No Spirit x No Spirit - Choosing You.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Study/14 Mondo Loops x l_Outlander - Morning Dew.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Study/13 LESKY x Waywell - Lucid Nights.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Study/12 hm surf - Sleepy Melly.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Study/11 Dontcry x Nokiaa - Became.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Study/10 Softy x Yasumu - Since That Night.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Study/09 Hoffy Beats x Enluv - Leaving Earth.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Study/08 Chau Sara - Friday.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Study/07 fourwalls x Umbriel - talked in a dream.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Study/06 Purrple Cat - Sleepless.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Study/05 Chau Sara - Deep Dive.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Study/04 WYS - Simple Dreams.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Study/03 Lawrence Walther x Tibeauthetraveler - Tender.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Study/02 eaup x Epona - Seashells.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Study/01 Tibeauthetraveler x So.Lo - Goodnight.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Sleepermane - Unfloding/7. sleepermane - terra -13lufs final.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Sleepermane - Unfloding/6. sleepermane - lux -13lufs final.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Sleepermane - Unfloding/5. sleepermane - helios -13lufs final.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Sleepermane - Unfloding/4. sleepermane - asil -13lufs final.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Sleepermane - Unfloding/3. sleepermane - voyage -13lufs final.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Sleepermane - Unfloding/2. sleepermane - unfolding -13lufs final.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/Sleepermane - Unfloding/1. sleepermane - northbound -13lufs final.mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/MP3 - Compilation 7 - Soothing Breeze/21 Jhove- High Sun (Kupla Master).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/MP3 - Compilation 7 - Soothing Breeze/20 Mondo Loops - Danso Lullaby (w Softy) (Kupla MAster).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/MP3 - Compilation 7 - Soothing Breeze/19 Living Room x Otaam - Fuji (Kupla Master).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/MP3 - Compilation 7 - Soothing Breeze/18 Phlocalyst _ Living Room _ Myríad - Koi (Kupla Master).mp3
+Dec 24 22:16 : update: removing lofi-hiphop-chill/MP3 - Compilation 7 - Soothing Breeze/17 BVG x møndberg - Waterfall (Kupla Master).mp3
+Dec 24 22:16 : exception: Failed to open /home/air/.config/mpd/playlists: No such file or directory
+Dec 24 22:17 : update: added /☃️ Minecraft Snowy Winter Cottage w_ Holiday Jazz Music _ 8 Hours-K9ohFrtyCks.mp3
+Dec 24 22:17 : exception: Failed to open /home/air/.config/mpd/playlists: No such file or directory
+Dec 25 03:53 : output: Failed to play on "pulse" (pipewire): connection error
+Dec 25 03:53 : player: played "☃️ Minecraft Snowy Winter Cottage w_ Holiday Jazz Music _ 8 Hours-K9ohFrtyCks.mp3"

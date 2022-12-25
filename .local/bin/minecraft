@@ -1,2 +1,2 @@
 #!/bin/sh
-java -jar ~/progs/tl/tlauncher.jar
+java -jar ~/programs/tl/tlauncher.jar

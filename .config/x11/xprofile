@@ -19,7 +19,7 @@ syncthing --no-browser &
 
 #xrdb ${XDG_CONFIG_HOME:-$HOME/.config}/x11/xresources & xrdbpid=$!	# Uncomment to use Xresources colors/settings on startup
 
-autostart="picom dunst pipewire firefox obsidian"
+autostart="picom dunst pipewire firefox obsidian ncp"
 # ncp
 
 #setsid -f "$TERMINAL" -e cava
