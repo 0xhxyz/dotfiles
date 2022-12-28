@@ -1487,7 +1487,6 @@ _comps=(
 'yafc' '_yafc'
 'yash' '_sh'
 'yay' '_yay'
-'youtube-dl' '_youtube-dl'
 'ypbind' '_yp'
 'ypcat' '_yp'
 'ypmatch' '_yp'
@@ -1499,6 +1498,7 @@ _comps=(
 'ypwhich' '_yp'
 'ypxfr' '_yp'
 'ytalk' '_other_accounts'
+'yt-dlp' '_yt-dlp'
 'zargs' '_zargs'
 'zathura' '_zathura'
 'zcalc' '_zcalc'
@@ -1670,7 +1670,7 @@ autoload -Uz _bat _bootctl _busctl _coredumpctl _curl \
             _sd_machines _sd_outputmodes _sd_unit_files _systemctl _systemd \
             _systemd-analyze _systemd-delta _systemd-inhibit _systemd-nspawn _systemd-path \
             _systemd-run _systemd-tmpfiles _timedatectl _udevadm _yay \
-            _youtube-dl _zathura _cdr _all_labels _all_matches \
+            _yt-dlp _zathura _cdr _all_labels _all_matches \
             _alternative _approximate _arg_compile _arguments _bash_completions \
             _cache_invalid _call_function _combination _complete _complete_debug \
             _complete_help _complete_help_generic _complete_tag _comp_locale _correct \

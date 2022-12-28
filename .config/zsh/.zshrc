@@ -159,7 +159,8 @@ alias \
     1h="termdown 1h && notify-send '1 hour over'" \
     2h="termdown 2h && notify-send '2 hours over'" \
     tm="termdown" \
-    ytmp3="youtube-dl --extract-audio --audio-format mp3" \
+    ytmp3="yt-dlp -f 'ba' -x --audio-format mp3 -o '%(title)s.%(ext)s'" \
+    ytmp4="yt-dlp -S res,ext:mp4:m4a --recode mp4" \
 alias \
 	lf="lfub" \
     sxb="sxiv -tf *" \
