@@ -9,7 +9,7 @@ setopt +o nomatch
 # History in cache directory:
 HISTSIZE=1000
 SAVEHIST=1000
-HISTFILE=".local/share/zsh/history"
+HISTFILE="/home/air/.local/share/zsh/history"
 
 # Basic auto/tab complete:
 autoload -U compinit
@@ -161,6 +161,8 @@ alias \
     tm="termdown" \
     ytmp3="yt-dlp -f 'ba' -x --audio-format mp3 -o '%(title)s.%(ext)s'" \
     ytmp4="yt-dlp -S res,ext:mp4:m4a --recode mp4" \
+    sv="sudo nvim" \
+    pss="ps aux | grep" \
 alias \
 	lf="lfub" \
     sxb="sxiv -tf *" \

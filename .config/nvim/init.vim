@@ -21,6 +21,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-commentary'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'andweeb/presence.nvim'
+Plug 'jackMort/ChatGPT.nvim'
 call plug#end()
 
 let g:Hexokinase_highlighters = ['backgroundfull']
