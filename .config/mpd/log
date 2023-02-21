@@ -5028,3 +5028,64 @@ Feb 01 15:50 : player: played "take a moment. chill and brew some tea - Animal C
 Feb 01 15:50 : player: played "take a moment. chill and brew some tea - Animal Crossing Music.mp3"
 Feb 01 15:51 : exception: Failed to open /home/air/.config/mpd/playlists: No such file or directory
 Feb 01 15:55 : exception: Failed to open /home/air/.config/mpd/playlists: No such file or directory
+Feb 19 15:02 : update: added Freddie Dredd/Freddie Dredd - Devil's Work.mp3
+Feb 19 15:02 : update: added Freddie Dredd/Freddie Dredd - All Alone.mp3
+Feb 19 15:02 : update: added Freddie Dredd/Freddie Dredd - Wrath.mp3
+Feb 19 15:02 : update: added Freddie Dredd/Freddie Dredd - Greed.mp3
+Feb 19 15:02 : update: added Freddie Dredd/Freddie Dredd - Limbo.mp3
+Feb 19 15:02 : update: added Freddie Dredd/Freddie Dredd - GTG.mp3
+Feb 19 15:02 : update: added Freddie Dredd/Freddie Dredd - Weather.mp3
+Feb 19 15:02 : update: added Freddie Dredd/Freddie Dredd - On Me.mp3
+Feb 19 15:06 : update: added lofi/Winter Holiday Animal Crossing Songs to Get You Into the Holiday Spirit! _ Nintendo Music Playlist.mp3
+Feb 19 15:06 : update: added lofi/take a moment. chill and brew some tea - Animal Crossing Music.mp3
+Feb 19 15:06 : update: added lofi/Chill Mountain Cabin Ambience with Relaxing Lofi Hiphop, Crackling Fireplace and Rain Sounds 8 hours (64 kbps).mp3
+Feb 19 15:06 : update: added lofi/Relaxing Club Penguin Music.mp3
+Feb 20 11:14 : exception: Failed to open /home/air/.config/mpd/playlists: No such file or directory
+Feb 20 11:15 : exception: Failed to open /home/air/.config/mpd/playlists: No such file or directory
+Feb 20 11:34 : player: played "Freddie Dredd/Freddie Dredd - All Alone.mp3"
+Feb 20 11:37 : player: played "Freddie Dredd/Freddie Dredd - Limbo.mp3"
+Feb 20 11:39 : player: played "Freddie Dredd/Freddie Dredd - Greed.mp3"
+Feb 20 11:41 : player: played "Freddie Dredd/Freddie Dredd - GTG.mp3"
+Feb 20 11:43 : player: played "Freddie Dredd/Freddie Dredd - On Me.mp3"
+Feb 20 11:45 : player: played "Freddie Dredd/Freddie Dredd - Devil's Work.mp3"
+Feb 20 11:46 : player: played "Freddie Dredd/Freddie Dredd - Weather.mp3"
+Feb 20 11:48 : player: played "Freddie Dredd/Freddie Dredd - Wrath.mp3"
+Feb 20 11:51 : exception: Failed to open /home/air/.config/mpd/playlists: No such file or directory
+Feb 20 11:51 : exception: Failed to decode /home/air/music/Relaxing Club Penguin Music.mp3; Failed to open '/home/air/music/Relaxing Club Penguin Music.mp3': No such file or directory
+Feb 20 11:51 : player: played "Relaxing Club Penguin Music.mp3"
+Feb 20 11:51 : exception: Failed to decode /home/air/music/Relaxing Club Penguin Music.mp3; Failed to open '/home/air/music/Relaxing Club Penguin Music.mp3': No such file or directory
+Feb 20 11:51 : player: played "Relaxing Club Penguin Music.mp3"
+Feb 20 11:51 : exception: Failed to decode /home/air/music/Relaxing Club Penguin Music.mp3; Failed to open '/home/air/music/Relaxing Club Penguin Music.mp3': No such file or directory
+Feb 20 11:51 : player: played "Relaxing Club Penguin Music.mp3"
+Feb 20 11:51 : exception: Failed to decode /home/air/music/Relaxing Club Penguin Music.mp3; Failed to open '/home/air/music/Relaxing Club Penguin Music.mp3': No such file or directory
+Feb 20 11:51 : player: played "Relaxing Club Penguin Music.mp3"
+Feb 20 11:52 : exception: Failed to decode /home/air/music/Relaxing Club Penguin Music.mp3; Failed to open '/home/air/music/Relaxing Club Penguin Music.mp3': No such file or directory
+Feb 20 11:52 : player: played "Relaxing Club Penguin Music.mp3"
+Feb 20 11:52 : exception: Failed to decode /home/air/music/Relaxing Club Penguin Music.mp3; Failed to open '/home/air/music/Relaxing Club Penguin Music.mp3': No such file or directory
+Feb 20 11:52 : player: played "Relaxing Club Penguin Music.mp3"
+Feb 20 11:52 : exception: Failed to decode /home/air/music/Relaxing Club Penguin Music.mp3; Failed to open '/home/air/music/Relaxing Club Penguin Music.mp3': No such file or directory
+Feb 20 11:52 : player: played "Relaxing Club Penguin Music.mp3"
+Feb 20 11:52 : exception: Failed to decode /home/air/music/Relaxing Club Penguin Music.mp3; Failed to open '/home/air/music/Relaxing Club Penguin Music.mp3': No such file or directory
+Feb 20 11:52 : player: played "Relaxing Club Penguin Music.mp3"
+Feb 20 11:52 : exception: Failed to decode /home/air/music/Relaxing Club Penguin Music.mp3; Failed to open '/home/air/music/Relaxing Club Penguin Music.mp3': No such file or directory
+Feb 20 11:52 : exception: Failed to decode /home/air/music/Winter Holiday Animal Crossing Songs to Get You Into the Holiday Spirit! _ Nintendo Music Playlist.mp3; Failed to open '/home/air/music/Winter Holiday Animal Crossing Songs to Get You Into the Holiday Spirit! _ Nintendo Music Playlist.mp3': No such file or directory
+Feb 20 11:52 : player: played "Relaxing Club Penguin Music.mp3"
+Feb 20 11:52 : exception: Failed to decode /home/air/music/Winter Holiday Animal Crossing Songs to Get You Into the Holiday Spirit! _ Nintendo Music Playlist.mp3; Failed to open '/home/air/music/Winter Holiday Animal Crossing Songs to Get You Into the Holiday Spirit! _ Nintendo Music Playlist.mp3': No such file or directory
+Feb 20 11:52 : player: played "Winter Holiday Animal Crossing Songs to Get You Into the Holiday Spirit! _ Nintendo Music Playlist.mp3"
+Feb 20 11:52 : exception: Failed to decode /home/air/music/Winter Holiday Animal Crossing Songs to Get You Into the Holiday Spirit! _ Nintendo Music Playlist.mp3; Failed to open '/home/air/music/Winter Holiday Animal Crossing Songs to Get You Into the Holiday Spirit! _ Nintendo Music Playlist.mp3': No such file or directory
+Feb 20 11:52 : player: played "Winter Holiday Animal Crossing Songs to Get You Into the Holiday Spirit! _ Nintendo Music Playlist.mp3"
+Feb 20 11:52 : exception: Failed to decode /home/air/music/Winter Holiday Animal Crossing Songs to Get You Into the Holiday Spirit! _ Nintendo Music Playlist.mp3; Failed to open '/home/air/music/Winter Holiday Animal Crossing Songs to Get You Into the Holiday Spirit! _ Nintendo Music Playlist.mp3': No such file or directory
+Feb 20 11:52 : player: played "Winter Holiday Animal Crossing Songs to Get You Into the Holiday Spirit! _ Nintendo Music Playlist.mp3"
+Feb 20 11:52 : exception: Failed to decode /home/air/music/Relaxing Club Penguin Music.mp3; Failed to open '/home/air/music/Relaxing Club Penguin Music.mp3': No such file or directory
+Feb 20 11:52 : player: played "Relaxing Club Penguin Music.mp3"
+Feb 20 11:52 : exception: Failed to decode /home/air/music/Winter Holiday Animal Crossing Songs to Get You Into the Holiday Spirit! _ Nintendo Music Playlist.mp3; Failed to open '/home/air/music/Winter Holiday Animal Crossing Songs to Get You Into the Holiday Spirit! _ Nintendo Music Playlist.mp3': No such file or directory
+Feb 20 11:52 : player: played "Winter Holiday Animal Crossing Songs to Get You Into the Holiday Spirit! _ Nintendo Music Playlist.mp3"
+Feb 20 11:52 : player: played "Freddie Dredd/Freddie Dredd - All Alone.mp3"
+Feb 21 08:55 : update: removing Freddie Dredd/Freddie Dredd - All Alone.mp3
+Feb 21 08:55 : update: removing Freddie Dredd/Freddie Dredd - Wrath.mp3
+Feb 21 08:55 : update: removing Freddie Dredd/Freddie Dredd - Weather.mp3
+Feb 21 08:55 : update: removing Freddie Dredd/Freddie Dredd - Devil's Work.mp3
+Feb 21 08:55 : update: removing Freddie Dredd/Freddie Dredd - On Me.mp3
+Feb 21 08:55 : update: removing Freddie Dredd/Freddie Dredd - GTG.mp3
+Feb 21 08:55 : update: removing Freddie Dredd/Freddie Dredd - Greed.mp3
+Feb 21 08:55 : update: removing Freddie Dredd/Freddie Dredd - Limbo.mp3
