@@ -163,6 +163,9 @@ alias \
     ytmp4="yt-dlp -S res,ext:mp4:m4a --recode mp4" \
     sv="sudo nvim" \
     pss="ps aux | grep" \
+    src="source" \
+    dct="deactivate" \
+    pycharm="export _JAVA_AWT_WM_NONREPARENTING=1; setsid pycharm; exit" \
 alias \
 	lf="lfub" \
     sxb="sxiv -tf *" \
