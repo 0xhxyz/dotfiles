@@ -21,7 +21,9 @@ Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-commentary'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'andweeb/presence.nvim'
-Plug 'jackMort/ChatGPT.nvim'
+Plug 'ervandew/supertab'
+Plug 'vim-syntastic/syntastic'
+"Plug 'jackMort/ChatGPT.nvim'
 call plug#end()
 
 let g:Hexokinase_highlighters = ['backgroundfull']
@@ -62,7 +64,7 @@ vnoremap n :norm<Space>
 vnoremap a :norm<Space>0i//<CR>
 vnoremap . :norm .<CR>
 
-map <leader>n :NERDTreeToggle<CR>
+map <C-n> :NERDTreeToggle<CR>
 
 map <leader>f :Goyo \| set bg=dark \| set linebreak<CR>
 
@@ -73,7 +75,7 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 nnoremap <C-a> :%y<CR>
 nnoremap <C-x> :!g++ -std=c++17 -Wshadow -Wall % -O2 -Wno-unused-result && setsid st -e<CR>
-nnoremap <C-w> :!g++ -std=c++17 -Wshadow -Wall % -g -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG && setsid st -e<CR>
+nnoremap <C-e> :!g++ -std=c++17 -Wshadow -Wall % -g -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG && setsid st -e<CR>
 nnoremap <C-q> :read /home/air/files/programs/problems/mytemplate.cpp<CR>i<BS><Esc>/overhere<CR>dwi<Tab>
 nnoremap <C-s> :w<CR>
 nnoremap <C-f> :%s//g<Left><Left>

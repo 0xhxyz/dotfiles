@@ -139,6 +139,7 @@ alias \
     gp='git push' \
     sst='sudo systemctl' \
     cdf='~/files/programs/problems/codeforces' \
+    cdp='~/files/programs' \
     cdc='~/.local/src' \
     cdb='~/.local/bin' \
     ev='v ~/.config/nvim/init.vim' \
