@@ -166,7 +166,9 @@ alias \
     pss="ps aux | grep" \
     src="source" \
     dct="deactivate" \
+    srcv="source venv/bin/activate" \
     pycharm="export _JAVA_AWT_WM_NONREPARENTING=1; setsid pycharm; exit" \
+    delnvimswap="rm ~/.local/state/nvim/swap/*" \
 alias \
 	lf="lfub" \
     sxb="sxiv -tf *" \
