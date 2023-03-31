@@ -1,9 +1,9 @@
 #!/bin/bash
 
-RET=$(echo -e "🛑 shutdown\n🟡 reboot\n🚪 logout\ncancel" | dmenu )
+RET=$(echo -e "🛑 shutdown\n🟡 reboot\n🔒 lock\n🚪 logout\ncancel" | dmenu )
 
 case $RET in
-    #'🔒 lock') slock ;;
+    '🔒 lock') slock ;;
 	'🛑 shutdown') sudo shutdown now ;;
 	'🟡 reboot') sudo reboot ;;
 	'🚪 logout') killall dwm ;;

@@ -181,3 +181,5 @@ PATH="$HOME/.local/bin:$PATH"
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 
+
+export PATH=$PATH:/home/air/.spicetify
