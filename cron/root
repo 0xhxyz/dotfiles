@@ -1,2 +1,0 @@
-* * * * * /usr/bin/pacman -Sy
-*/30 * * * * /usr/bin/updatedb
