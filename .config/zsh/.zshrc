@@ -147,7 +147,6 @@ alias \
     es='v ~/portal/share' \
     ao='ao && exit' \
     rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'" \
-    mssql="sudo /opt/mssql/bin/sqlservr" \
     pkgsizesort='expac "%n %m" -l"\n" -Q $(pacman -Qq) | sort -rhk 2' \
     scim="sc-im" \
     ytm="ytfzf -m" \
@@ -169,6 +168,7 @@ alias \
     srcv="source venv/bin/activate" \
     pycharm="export _JAVA_AWT_WM_NONREPARENTING=1; setsid pycharm; exit" \
     delnvimswap="rm ~/.local/state/nvim/swap/*" \
+    medt="mpv ~/meditation.mp4 breathing.mp4"
 alias \
 	lf="lfub" \
     sxb="sxiv -tf *" \

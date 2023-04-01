@@ -12,7 +12,7 @@ xset -b
 
 curl 'wttr.in/Manouba?FTQ1' -s > ~/.weatherreport
 
-curl --output ~/.prayertimes https://api.aladhan.com/v1/timingsByAddress/$(date '+%F')?address=Manouba&method=1
+curl --output ~/.prayertimes "https://api.aladhan.com/v1/timingsByAddress/$(date +%d-%m-%Y)?address=Tunis,%20Tunisia&method=99&methodSettings=18.0,null,18.0"
 
 syncthing --no-browser &
 
