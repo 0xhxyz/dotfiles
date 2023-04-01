@@ -7,8 +7,8 @@ setopt interactive_comments
 setopt +o nomatch
 
 # History in cache directory:
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=10000
+SAVEHIST=10000
 HISTFILE="/home/air/.local/share/zsh/history"
 
 # Basic auto/tab complete:
@@ -163,9 +163,10 @@ alias \
     ytmp4="yt-dlp -S res,ext:mp4:m4a --recode mp4" \
     sv="sudo nvim" \
     pss="ps aux | grep" \
+    newv="python -m venv venv"
     src="source" \
     dct="deactivate" \
-    srcv="source venv/bin/activate" \
+    srcw="source venv/bin/activate" \
     pycharm="export _JAVA_AWT_WM_NONREPARENTING=1; setsid pycharm; exit" \
     delnvimswap="rm ~/.local/state/nvim/swap/*" \
     medt="mpv ~/meditation.mp4 breathing.mp4"
