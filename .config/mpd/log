@@ -5866,3 +5866,6 @@ Mar 26 10:42 : update: removing lofi/take a moment. chill and brew some tea - An
 Mar 26 10:42 : update: updating lofi/take a moment. chill and brew some tea - Animal Crossing Music.mp3
 Mar 26 11:17 : player: played "lofi/take a moment. chill and brew some tea - Animal Crossing Music.mp3"
 Apr 01 22:57 : player: played "lofi/Relaxing Club Penguin Music.mp3"
+Apr 02 00:07 : player: played "lofi/Relaxing Club Penguin Music.mp3"
+Apr 02 00:36 : output: Failed to play on "pulse" (pipewire): connection error
+Apr 02 01:09 : output: Failed to play on "pulse" (pipewire): connection error

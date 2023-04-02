@@ -1,0 +1,9 @@
+#!/bin/bash
+
+RET=$(echo -e "🍁 vscodium\n🍀 leafpad\ncancel" | dmenu )
+
+case $RET in
+    '🍁 vscodium') vscodium ;;
+    '🍀 leafpad') leafpad ;;
+    *) ;;
+esac

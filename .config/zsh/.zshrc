@@ -111,6 +111,7 @@ alias \
 	ip="ip -color=auto"
 
 # These common commands are just too long! Abbreviate them.
+# General
 alias \
 	ka="killall" \
 	g="git" \
@@ -131,6 +132,14 @@ alias \
 	fgrep='fgrep --colour=auto' \
 	c='clear' \
 	hist='less $HISTFILE' \
+    sv="sudo nvim" \
+    pss="ps aux | grep" \
+    ev='v ~/.config/nvim/init.vim' \
+    ez='v ~/.zshrc' \
+    es='v ~/portal/share' \
+
+#Programs n other
+alias \
 	gparted='sudo gparted' \
     fm='pcmanfm' \
     gs='git status' \
@@ -142,9 +151,6 @@ alias \
     cdp='~/files/programs' \
     cdc='~/.local/src' \
     cdb='~/.local/bin' \
-    ev='v ~/.config/nvim/init.vim' \
-    ez='v ~/.zshrc' \
-    es='v ~/portal/share' \
     ao='ao && exit' \
     rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'" \
     pkgsizesort='expac "%n %m" -l"\n" -Q $(pacman -Qq) | sort -rhk 2' \
@@ -161,20 +167,20 @@ alias \
     tm="termdown" \
     ytmp3="yt-dlp -f 'ba' -x --audio-format mp3 -o '%(title)s.%(ext)s'" \
     ytmp4="yt-dlp -S res,ext:mp4:m4a --recode mp4" \
-    sv="sudo nvim" \
-    pss="ps aux | grep" \
-    newv="python -m venv venv"
+
+alias \
+    newv="python -m venv venv" \
     src="source" \
     dct="deactivate" \
     srcw="source venv/bin/activate" \
     pycharm="export _JAVA_AWT_WM_NONREPARENTING=1; setsid pycharm; exit" \
     delnvimswap="rm ~/.local/state/nvim/swap/*" \
-    medt="mpv ~/meditation.mp4 breathing.mp4"
-alias \
+    emoji="v ~/.local/share/airice/chars/emoji" \
+    med="mpv ~/meditation.mp4 breathing.mp4" \
 	lf="lfub" \
     sxb="sxiv -tf *" \
+	#ref="shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc" \
 	#magit="nvim -c MagitOnly" \
-	ref="shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc" \
 	#weath="less -S ${XDG_DATA_HOME:-$HOME/.local/share}/weatherreport" \
 #additional aliases:
 

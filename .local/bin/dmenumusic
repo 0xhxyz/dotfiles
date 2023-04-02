@@ -1,9 +1,9 @@
 #!/bin/bash
 
-RET=$(echo -e "📗 spotify\n📙 ncmpcpp\ncancel" | dmenu )
+RET=$(echo -e "♍ spotify\n📙 ncmpcpp\ncancel" | dmenu )
 
 case $RET in
-    '📗 spotify') spotify ;;
+    '♍ spotify') spotify ;;
     '📙 ncmpcpp') ncp ;;
     *) ;;
 esac
