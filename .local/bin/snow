@@ -1,0 +1,10 @@
+#!/bin/sh
+
+killall xsnow
+if [ $? -eq 0 ]
+then
+    notify-send "❄️🌨️ Snow disabled ☃️❄️"
+else
+    xsnow -snowflakes 150 -sc '#808080' -notrees -nowind -nokeepsnowonscreen -nokeepsnowonwindows -delay 40 &
+    notify-send "❄️🌨️ Snow enabled ☃️❄️"
+fi
