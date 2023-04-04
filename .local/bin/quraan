@@ -1,3 +1,0 @@
-#!/bin/sh
-setsid zathura ~/files/books/arabic-quran2.pdf &
-spotify &
