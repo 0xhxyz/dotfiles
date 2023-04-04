@@ -11,7 +11,7 @@ My dotfiles, mainly:
 ## Preview
 Theme: Black+[Gruvbox](https://github.com/morhetz/gruvbox)
 
-![Untitled](https://user-images.githubusercontent.com/87134721/199604644-12f72607-10d6-423c-86c0-8be12aec44c3.png)
+![Untitled](.collection/preview1.jpg)
 
 
 ## Installation
