@@ -170,6 +170,7 @@ alias \
 
 alias \
     newv="python -m venv venv" \
+    ppip="python -m pip install" \
     src="source" \
     dct="deactivate" \
     srcw="source venv/bin/activate" \

@@ -1,0 +1,15 @@
+{
+    "window.zoomLevel": -1,
+    "workbench.iconTheme": "material-icon-theme",
+    "git.openRepositoryInParentFolders": "never",
+    "workbench.colorTheme": "Lambda Black",
+    "code-runner.runInTerminal": true,
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "workbench.startupEditor": "none",
+    "vim.visualModeKeyBindingsNonRecursive": [],
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "fiveServer.browser": [
+        "surf"
+    ]
+}

@@ -86,4 +86,6 @@ autocmd BufWritePre * %s/\s\+$//e
 
 cabbrev w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 
+autocmd BufWritePost config.h,config.def.h !sudo make install
+
 autocmd BufWritePost ~/.local/src/dwmblocks/config.h !cd ~/.local/src/dwmblocks/; sudo make install && { killall -q dwmblocks;setsid -f dwmblocks }
