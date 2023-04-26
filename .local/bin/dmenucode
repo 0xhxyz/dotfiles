@@ -3,7 +3,7 @@
 RET=$(echo -e "🍁 vscodium\n🐍 pycharm\n🍀 leafpad\ncancel" | dmenu )
 
 case $RET in
-    '🍁 vscodium') vscodium ;;
+    '🍁 vscodium') codium ;;
     '🐍 pycharm') export _JAVA_AWT_WM_NONREPARENTING=1; setsid pycharm; exit ;;
     '🍀 leafpad') leafpad ;;
     *) ;;

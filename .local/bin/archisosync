@@ -1,0 +1,13 @@
+#!/bin/bash
+
+dt=$(stat -c "%W" ~/vms/archlinux-x86_64.iso |  awk '{print strftime("%c",$1)}' | awk '{print $3}')
+
+cdt=$(date +%b)
+
+if [ "$dt" == "$cdt" ]; then
+    echo "You have the recent arch linux iso version"
+else
+    echo "We are downloading the latest arch linux iso version"
+    mv ~/vms/archlinux-x86_64.iso ~/vms/old-archlinux.iso
+    wget https://archmirror.it/repos/iso/latest/archlinux-x86_64.iso -P ~/vms/
+fi

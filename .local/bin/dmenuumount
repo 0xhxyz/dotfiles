@@ -11,11 +11,11 @@ chosen="$(echo "$drives" | dmenu -i -p "Unmount which drive?")" || exit 1
 case "$chosen" in
 	📱*)
 		chosen="${chosen#📱 }"
-		sudo -A umount -l "$chosen"
+		sudo umount -l "$chosen"
 		;;
 	*)
 		chosen="${chosen% (*}"
-		sudo -A umount -l "$chosen"
+		sudo umount -l "$chosen"
 		;;
 esac && notify-send "🖥️ Drive unmounted." "$chosen successfully unmounted." ||
 	notify-send "🖥️ Drive failed to unmount." "Possibly a permissions or I/O issue."

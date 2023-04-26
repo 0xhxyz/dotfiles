@@ -1,6 +1,6 @@
 {
     "general": {
-        "voiceDisconnect": false,
+        "voiceDisconnect": true,
         "showToasts": true,
         "mediaKeys": false
     },

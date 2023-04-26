@@ -16,6 +16,7 @@ curl --output ~/.prayertimes "https://api.aladhan.com/v1/timingsByAddress/$(date
 
 syncthing --no-browser &
 
+betterdiscordctl reinstall
 
 #xrdb ${XDG_CONFIG_HOME:-$HOME/.config}/x11/xresources & xrdbpid=$!	# Uncomment to use Xresources colors/settings on startup
 

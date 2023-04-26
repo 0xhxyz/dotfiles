@@ -50,7 +50,7 @@ getmount(){
 	test -n "$mp"
 	if [ ! -d "$mp" ]; then
 		mkdiryn=$(printf "No\\nYes" | dmenu -i -p "$mp does not exist. Create it?")
-		[ "$mkdiryn" = "Yes" ] && (mkdir -p "$mp" || sudo -A mkdir -p "$mp")
+		[ "$mkdiryn" = "Yes" ] && (mkdir -p "$mp" || sudo mkdir -p "$mp")
 	fi
 }
 

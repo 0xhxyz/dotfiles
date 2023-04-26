@@ -4,7 +4,9 @@
 # Decrease key repeat delay to 300ms and increase key repeat rate to 50 per second.
 xset r rate 300 50
 
-setxkbmap -model pc104 -layout us,fr,ar,jp -variant ,,,kana -option grp:lctrl_lwin_toggle
+setxkbmap -model pc104 -layout us,fr,ar -variant ,, -option grp:lctrl_lwin_toggle
+
+#setxkbmap -model pc104 -layout us,fr,ar,jp -variant ,,,kana -option grp:lctrl_lwin_toggle
 #jp -variant ,,kana
 
 # When caps lock is pressed only once, treat it as escape.

@@ -9,7 +9,7 @@ setopt +o nomatch
 # History in cache directory:
 HISTSIZE=10000
 SAVEHIST=10000
-HISTFILE="/home/air/.local/share/zsh/history"
+HISTFILE="$HOME/.local/share/zsh/history"
 
 # Basic auto/tab complete:
 autoload -U compinit
@@ -158,6 +158,7 @@ alias \
     ytm="ytfzf -m" \
     ytdw="ytfzf -d" \
     psu="sudo pacman -Syu" \
+    ysu="yay -Syu" \
     asg="sudo pacman -Sg | grep archstrike" \
     asgg="sudo pacman -Sgg | grep " \
     5m="termdown 5m && notify-send '5 minutes over'" \
@@ -178,6 +179,7 @@ alias \
     delnvimswap="rm ~/.local/state/nvim/swap/*" \
     emoji="v ~/.local/share/airice/chars/emoji" \
     med="mpv ~/meditation.mp4 breathing.mp4" \
+    codiumext="codium --list-extensions > ~/.config/VSCodium/User/codium_extensions_list" \
 	lf="lfub" \
     sxb="sxiv -tf *" \
 	#ref="shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc" \
