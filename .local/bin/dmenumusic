@@ -1,6 +1,6 @@
 #!/bin/bash
 
-RET=$(echo -e "🟥 ytm\n📙 ncmpcpp\ncancel" | dmenu )
+RET=$(echo -e "🟥 ytm\n📙 ncmpcpp\ncancel" | dmenu -i )
 
 case $RET in
     '🟥 ytm') killall mpv ; mpv --input-ipc-server=/tmp/mpvsocket --volume=100 --no-video $(ytfzf --type=all -L -D) ;;

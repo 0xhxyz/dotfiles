@@ -1,0 +1,7 @@
+#!/usr/bin/env zsh
+
+mv ~/.local/share/zsh/history ~/.local/share/zsh/bad
+strings ~/.local/share/zsh/bad > ~/.local/share/zsh/history
+fc -R ~/.local/share/zsh/history
+rm ~/.local/share/zsh/bad
+

@@ -28,5 +28,5 @@ if [ -f /sys/class/power_supply/BAT0/uevent ]; then
 	esac
 	echo -n "${icon}${prct}%"
 else
-	echo -n "🔌Plugged"
+	echo -n "🔌Plug" # Plugged
 fi

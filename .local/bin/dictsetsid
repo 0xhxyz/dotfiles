@@ -1,0 +1,9 @@
+#!/bin/bash
+
+dict $1
+echo
+echo
+echo "G:google|W:wikipedia|I:images|Other:close"
+read x
+#case $x i
+

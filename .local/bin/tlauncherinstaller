@@ -1,0 +1,22 @@
+#!/bin/bash
+
+rm ~/downloads/TLauncher*
+wget -O ~/downloads/TLauncher.zip tlauncher.org/jar
+
+name=$(unzip -l ~/downloads/TLauncher.zip | grep .jar | awk '{print $4}')
+
+if [ ! -d ~/programs/tl/ ]
+then
+    echo "Creating path"
+    mkdir -p ~/programs/tl/
+fi
+
+echo "Extracting jar in path"
+
+unzip -j ~/downloads/TLauncher.zip $name -d ~/programs/tl
+mv ~/programs/tl/$name ~/programs/tl/tlauncher.jar
+
+echo "Installing openjdk8"
+sudo pacman -S --noconfirm openjdk8-src jdk8-openjdk jre8-openjdk jre8-openjdk-headless
+
+echo "Operation Done"

@@ -1,4 +1,6 @@
 {
     "BetterAnimations": false,
-    "ZeresPluginLibrary": false
+    "ZeresPluginLibrary": false,
+    "ServerHider": false,
+    "BDFDB": false
 }

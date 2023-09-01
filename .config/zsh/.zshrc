@@ -90,8 +90,9 @@ bindkey -M vicmd '^e' edit-command-line
 bindkey -M visual '^[[P' vi-delete
 
 # bat as manpager
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-
+# export MANPAGER="sh -c 'col -bx | bat -l man -p'" not sure what this was, doesnt work anymore
+export MANPAGER="bat -l man -p"
+# works mostly, breaks on some lines, still better than less or wtvr
 
 # Verbosity and settings that you pretty much just always are going to want.
 alias \
@@ -133,10 +134,11 @@ alias \
 	c='clear' \
 	hist='less $HISTFILE' \
     sv="sudo nvim" \
-    pss="ps aux | grep" \
+    pss="ps -aux | grep" \
     ev='v ~/.config/nvim/init.vim' \
     ez='v ~/.zshrc' \
     es='v ~/portal/share' \
+    edwm='v ~/.local/src/dwm/config.h' \
 
 #Programs n other
 alias \
@@ -157,8 +159,11 @@ alias \
     scim="sc-im" \
     ytm="ytfzf -m" \
     ytdw="ytfzf -d" \
+    mpm="mpv --no-video" \
     psu="sudo pacman -Syu" \
     ysu="yay -Syu" \
+    ysur="yay --noconfirm -Syu && reboot" \
+    ysus="yay --noconfirm -Syu && shutdown now" \
     asg="sudo pacman -Sg | grep archstrike" \
     asgg="sudo pacman -Sgg | grep " \
     5m="termdown 5m && notify-send '5 minutes over'" \
@@ -168,6 +173,7 @@ alias \
     tm="termdown" \
     ytmp3="yt-dlp -f 'ba' -x --audio-format mp3 -o '%(title)s.%(ext)s'" \
     ytmp4="yt-dlp -S res,ext:mp4:m4a --recode mp4" \
+    ytmp3fzf='ytmp3 $(ytfzf --type=all -L)' \
 
 alias \
     newv="python -m venv venv" \
@@ -182,6 +188,7 @@ alias \
     codiumext="codium --list-extensions > ~/.config/VSCodium/User/codium_extensions_list" \
 	lf="lfub" \
     sxb="sxiv -tf *" \
+    ccl="cd && clear && ls" \
 	#ref="shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc" \
 	#magit="nvim -c MagitOnly" \
 	#weath="less -S ${XDG_DATA_HOME:-$HOME/.local/share}/weatherreport" \
@@ -190,6 +197,3 @@ alias \
 PATH="$HOME/.local/bin:$PATH"
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
-
-
-export PATH=$PATH:/home/air/.spicetify
