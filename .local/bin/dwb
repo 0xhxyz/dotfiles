@@ -1,0 +1,84 @@
+#!/bin/bash
+
+cd ~/.local/src
+
+
+white() {
+
+    # Background
+    bgrndrf 1
+
+    # Screen Brightness
+    brightnessctl set 100%
+
+    sudo cp -f /usr/local/bin/dwmw /usr/local/bin/dwm
+    sudo cp -f /usr/local/bin/stw /usr/local/bin/st
+    sudo cp -f /usr/local/bin/dmenuw /usr/local/bin/dmenu
+
+    cd ~/.config
+
+    # dunst Theme
+    sed -i '/^\tbackground = "/s/.*/\tbackground = "#ffffff"/' dunst/dunstrc
+    sed -i '/^\tforeground = "/s/.*/\tforeground = "#000000"/' dunst/dunstrc
+
+    # zathura inverse colors
+    sed -i '/^set recolor/s/.*/set recolor false/' zathura/zathurarc
+    sed -i '/^set default-bg/s/.*/set default-bg \\#ffffff/' zathura/zathurarc
+
+    # GTK 2 and 3 Theme
+    setsid -f lxbw Lucidity Adwaita
+
+    # file that indicates which theme is on
+    echo 1 > ~/.dwbcurrent
+}
+
+black() {
+
+    bgrndrf 0
+
+    brightnessctl set 13%
+
+    sudo cp -f /usr/local/bin/dwmb /usr/local/bin/dwm
+    sudo cp -f /usr/local/bin/stb /usr/local/bin/st
+    sudo cp -f /usr/local/bin/dmenub /usr/local/bin/dmenu
+
+
+    cd ~/.config
+
+    sed -i '/^[[:space:]]*background = "/s/.*/\tbackground = "#000000"/' dunst/dunstrc
+    sed -i '/^[[:space:]]*foreground = "/s/.*/\tforeground = "#ffffff"/' dunst/dunstrc
+
+    sed -i '/^set recolor/s/.*/set recolor true/' zathura/zathurarc
+    sed -i '/^set default-bg/s/.*/set default-bg \\#000000/' zathura/zathurarc
+
+    setsid -f lxbw Stygian BlackAndWhite
+
+    echo 0 > ~/.dwbcurrent
+}
+
+
+# Checking for arguments, only first one is used, else it flips based on DWM Theme
+if [ $# -ne 0 ]; then
+    if [ $1 -eq 0 ]; then
+        black
+    else
+        white
+    fi
+else
+    what=$(cut -c 1 ~/.dwbcurrent)
+    if [ "$what" == "0" ]; then
+        white
+    else
+        black
+    fi
+fi
+
+
+
+# Restarting Open Programs to Refresh their Theme
+setsid -f rsf
+killall dunst; setsid -f dunst
+killall Discord && setsid -f discord
+
+notify-send "🌓 DWB: System Theme Changed 🌗"
+killall -9 dwm

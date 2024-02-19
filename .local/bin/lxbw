@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sed -i "/^gtk-theme-name/s/.*/gtk-theme-name="\"$1\""/" ~/.config/gtk-2.0/gtkrc-2.0
+sed -i "/^gtk-theme-name/s/.*/gtk-theme-name=$2/" ~/.config/gtk-3.0/settings.ini

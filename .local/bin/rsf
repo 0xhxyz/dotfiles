@@ -1,0 +1,3 @@
+#!/bin/bash
+
+killall firefox && setsid -f firefox &

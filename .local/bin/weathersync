@@ -1,0 +1,6 @@
+#!/bin/bash
+
+weather=~/.weatherreport
+
+curl -f 'wttr.in/Manouba?FTQ1' -s > $weather
+

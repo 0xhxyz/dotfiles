@@ -1,0 +1,14 @@
+#!/bin/sh
+
+b=$(brightnessctl i | sed -n '2p' | sed 's/[()%]//g' | awk '{print $4}')
+
+case $BLOCK_BUTTON in
+    1) brightnessctl set +1 ;;
+    2) if [ "$b" -gt "40" ]; then brightnessctl set 0; else brightnessctl set 100%; fi ;;
+    3) brightnessctl set 1- ;;
+    4) brightnessctl set +1 ;;
+    5) brightnessctl set 1- ;;
+    6) "$TERMINAL" -e "$EDITOR" "$0" ;;
+esac
+
+echo "B$b%"

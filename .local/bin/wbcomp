@@ -1,0 +1,83 @@
+#!/bin/bash
+
+cd ~/.local/src
+
+
+compile() {
+    # Recompiling
+    sudo make -C ~/.local/src/dwm install
+    sudo make -C ~/.local/src/st install
+    sudo make -C ~/.local/src/dmenu install
+}
+
+white() {
+
+    # DWM Theme
+    sed -i '/^static char normbgcolor\[\]/s/.*/static char normbgcolor\[\]           = "#ffffff";/' dwm/config.h
+    sed -i '/^static char normbordercolor\[\]/s/.*/static char normbordercolor\[\]       = "#dedede";/' dwm/config.h
+    sed -i '/^static char normfgcolor\[\]/s/.*/static char normfgcolor\[\]           = "#000000";/' dwm/config.h
+    sed -i '/^static char selfgcolor\[\]/s/.*/static char selfgcolor\[\]           = "#000000";/' dwm/config.h
+    sed -i '/^static char selbordercolor\[\]/s/.*/static char selbordercolor\[\]           = "#ffffff";/' dwm/config.h
+    sed -i '/^static char selbgcolor\[\]/s/.*/static char selbgcolor\[\]           = "#dedede";/' dwm/config.h
+
+    # St Theme
+    sed -i 's/#000000/#dwblol/g' st/config.h
+    sed -i 's/#ffffff/#000000/g' st/config.h
+    sed -i 's/#dwblol/#ffffff/g' st/config.h
+
+    # Dmenu Theme
+    sed -i '/^\t\[SchemeNorm\] = { "/s/.*/\t\[SchemeNorm\] = { "#000000", "#ffffff" },/' dmenu/config.h
+    sed -i '/^\t\[SchemeSel\] = { "/s/.*/\t\[SchemeSel\] = { "#000000", "#dedede" },/' dmenu/config.h
+    sed -i '/^\t\[SchemeOut\] = { "/s/.*/\t\[SchemeOut\] = { "#ffffff", "#dedede" },/' dmenu/config.h
+
+
+    compile
+
+    sudo cp /usr/local/bin/dwm /usr/local/bin/dwmw
+    sudo cp /usr/local/bin/st /usr/local/bin/stw
+    sudo cp /usr/local/bin/dmenu /usr/local/bin/dmenuw
+
+}
+
+black() {
+
+    sed -i '/^static char normbgcolor\[\]/s/.*/static char normbgcolor\[\]           = "#000000";/' dwm/config.h
+    sed -i '/^static char normbordercolor\[\]/s/.*/static char normbordercolor\[\]       = "#212121";/' dwm/config.h
+    sed -i '/^static char normfgcolor\[\]/s/.*/static char normfgcolor\[\]           = "#ffffff";/' dwm/config.h
+    sed -i '/^static char selfgcolor\[\]/s/.*/static char selfgcolor\[\]           = "#ffffff";/' dwm/config.h
+    sed -i '/^static char selbordercolor\[\]/s/.*/static char selbordercolor\[\]           = "#000000";/' dwm/config.h
+    sed -i '/^static char selbgcolor\[\]/s/.*/static char selbgcolor\[\]           = "#212121";/' dwm/config.h
+
+    sed -i 's/#000000/#dwblol/g' st/config.h
+    sed -i 's/#ffffff/#000000/g' st/config.h
+    sed -i 's/#dwblol/#ffffff/g' st/config.h
+
+    sed -i '/^\t\[SchemeNorm\] = { "/s/.*/\t\[SchemeNorm\] = { "#ffffff", "#000000" },/' dmenu/config.h
+    sed -i '/^\t\[SchemeSel\] = { "/s/.*/\t\[SchemeSel\] = { "#ffffff", "#212121" },/' dmenu/config.h
+    sed -i '/^\t\[SchemeOut\] = { "/s/.*/\t\[SchemeOut\] = { "#000000", "#212121" },/' dmenu/config.h
+
+    compile
+
+    sudo cp /usr/local/bin/dwm /usr/local/bin/dwmb
+    sudo cp /usr/local/bin/st /usr/local/bin/stb
+    sudo cp /usr/local/bin/dmenu /usr/local/bin/dmenub
+
+}
+
+
+# Checking for arguments, only first one is used, else it flips based on DWM Theme
+if [ $# -ne 0 ]; then
+    if [ $1 -eq 0 ]; then
+        black
+    else
+        white
+    fi
+else
+    what=$(grep "normbgcolor\[\]" ~/.local/src/dwm/config.h | grep -o '#......')
+    if [ "$what" == "#000000"  ]; then
+        white
+    else
+        black
+    fi
+fi
+

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# CLIP=$(xclip -o)
+SEL=$(xsel)
+   # '📋 clipboard') setsid -f "$TERMINAL" -e dictsetsid "$CLIP" ;;
+    # '💡 selection') setsid -f "$TERMINAL" -e dictsetsid "$SEL" ;;
+setsid -f "$TERMINAL" -e dictsetsid "$SEL"
+

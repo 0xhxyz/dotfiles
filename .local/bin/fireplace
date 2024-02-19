@@ -1,0 +1,4 @@
+#!/bin/sh
+
+setsid -f st -e mpv --volume=70 ~/12hfireplace.mp3 ; setsid -f st -e mpv --loop-playlist --fs ~/fireplace.mp4
+

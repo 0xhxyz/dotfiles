@@ -1,0 +1,25 @@
+#!/bin/bash
+
+curl -f 'https://www.meteo.tn/en/heures-prieres' > ~/.prayers.html
+
+# Newer Method, Scraping the National Institute of Meteorology website
+# Gives the correct times with no headaches
+# Putting them in text file in home directory for other scripts to use them without having to use pup to parse the html file everytime
+fajr=$(pup -f ~/.prayers.html 'span#sobh text{}')
+echo $fajr > ~/.prayert
+echo $(pup -f ~/.prayers.html 'span#dhohr text{}') >> ~/.prayert
+echo $(pup -f ~/.prayers.html 'span#aser text{}') >> ~/.prayert
+magr=$(pup -f ~/.prayers.html 'span#magreb text{}')
+echo $magr  >> ~/.prayert
+echo $(pup -f ~/.prayers.html 'span#isha text{}') >> ~/.prayert
+
+fh=$(awk -F: '{print $1}' <<< $fajr )
+fm=$(awk -F: '{print $2}' <<< $fajr )
+mh=$(awk -F: '{print $1}' <<< $magr )
+mm=$(awk -F: '{print $2}' <<< $magr )
+
+
+# Old Method, Using aladhan.com's API, formatting the json etc
+# Gives inaccurate times, theres no option for our institute
+# the methods of prayer times calculations differ depending on where you are in the globe, therefore either rely on the national institute in your country or figure out a way to integrate all the changing variables into a calculation program, i have no time for that at the moment
+#curl --output ~/.prayertimes "https://api.aladhan.com/v1/timingsByAddress/$(date +%d-%m-%Y)?address=Tunis,%20Tunisia&method=99&methodSettings=18.0,null,18.0"
