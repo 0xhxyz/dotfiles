@@ -1,3 +1,17 @@
 #!/bin/bash
 
-feh --randomize --bg-scale /home/air/backgrounds/*
+if [ $# -ne 0 ]; then
+    if [ $1 -eq 0 ]; then
+        feh --bg-scale ~/backgrounds/black.jpg
+    else
+        feh --bg-scale ~/backgrounds/white.jpg
+    fi
+else
+    what=$(cut -c 1 ~/.dwbcurrent)
+    if [ "$what" == "1" ]; then
+        feh --bg-scale ~/backgrounds/white.jpg
+    else
+        feh --bg-scale ~/backgrounds/black.jpg
+    fi
+fi
+

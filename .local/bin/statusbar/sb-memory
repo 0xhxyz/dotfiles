@@ -1,10 +1,11 @@
 #!/bin/sh
 
 case $BLOCK_BUTTON in
-	1) notify-send "📝 Memory hogs" "$(ps axch -o cmd:40,%mem --sort=-%mem | head)" ;;
+	1) notify-send "Memory hogs" "$(ps axch -o cmd:40,%mem --sort=-%mem | head)" ;;
 	3) setsid -f "$TERMINAL" -e htop ;;
 	6) "$TERMINAL" -e "$EDITOR" "$0" ;;
 esac
 
-echo -n '📝'
-free -h | awk '/^Mem:/ {print $3 "/" $2}'
+echo -n 'M'
+#free -h | awk '/^Mem:/ {print $3 "/" $2}'
+free -h | awk '/^Mem:/ {print $3}'

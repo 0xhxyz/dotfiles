@@ -1,6 +1,8 @@
 # Enable colors and change prompt:
 autoload -U colors && colors	# Load colors
-PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+# PS1="%B%{$fg[red]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$reset_color%}$%b "
+# PS1="%B%n@%M %~%{$reset_color%}$%b "
+PS1="%B%~%{$reset_color%}%b $%b "
 setopt autocd		# Automatically cd into typed directory.
 stty stop undef		# Disable ctrl-s to freeze terminal.
 setopt interactive_comments
@@ -36,7 +38,7 @@ bindkey -v '^?' backward-delete-char
 [ -f "$XINITRC" ] && alias startx="startx $XINITRC"
 
 # sudo not required for some system commands
-for command in mount umount sv pacman updatedb su shutdown poweroff reboot ; do
+for command in mount umount sv pacman updatedb su shutdown poweroff reboot gparted ; do
 	alias $command="sudo $command"
 done; unset command
 
@@ -101,53 +103,60 @@ alias \
 	rm="rm -vI" \
 	bc="bc -ql" \
 	mkd="mkdir -pv" \
-	ffmpeg="ffmpeg -hide_banner"
+	ffmpeg="ffmpeg -hide_banner" \
+    cpy="xclip -selection c"
 
 # Colorize commands when possible.
 alias \
-	ls="ls -hN --color=auto --group-directories-first" \
-	grep="grep --color=auto" \
-	diff="diff --color=auto" \
 	ccat="highlight --out-format=ansi" \
-	ip="ip -color=auto"
+	ip="ip -color=auto" \
+        ls="ls -hN --color=auto --group-directories-first" \
+    ll='ls -lh --color=auto' \
+	la='ls -a --color=auto' \
+	lla='ls -lah --color=auto' \
+
+    #ls='exa --color=always --group-directories-first' \
+    #ll='exa -lF --color=always --group-directories-first' \
+    #la='exa -a --color=always --group-directories-first' \
+    #lla='exa -alF --color=always --group-directories-first' \
+    #l='exa -F --color=always --group-directories-first' \
+    #l.='exa -a | egrep "^\."' \
+
+
 
 # These common commands are just too long! Abbreviate them.
 # General
 alias \
-	ka="killall" \
-	g="git" \
+	c='clear' \
 	trem="transmission-remote" \
 	sdn="shutdown -h now" \
 	e="$EDITOR" \
 	v="$EDITOR" \
+    t="tmux" \
+    ta="tmux a" \
 	p="pacman" \
-	xi="sudo xbps-install" \
-	xr="sudo xbps-remove -R" \
-	xq="xbps-query" \
 	z="zathura" \
-	ll='ls -lh --color=auto' \
-	la='ls -a --color=auto' \
-	lla='ls -lah --color=auto' \
 	grep='grep --colour=auto' \
+	diff="diff --color=auto" \
 	egrep='egrep --colour=auto' \
 	fgrep='fgrep --colour=auto' \
-	c='clear' \
-	hist='less $HISTFILE' \
+	hist='less +G $HISTFILE' \
+    h="sort $HISTFILE | uniq | fzf | tr '\\n' ' ' | cpy" \
     sv="sudo nvim" \
     pss="ps -aux | grep" \
     ev='v ~/.config/nvim/init.vim' \
     ez='v ~/.zshrc' \
     es='v ~/portal/share' \
-    edwm='v ~/.local/src/dwm/config.h' \
+    edwm='cd ~/.local/src/dwm && v ~/.local/src/dwm/config.h && cd -' \
+    est='v ~/.local/src/st/config.h' \
+    eur='v ~/.config/newsboat/urls' \
+    cfg='cd ~/.config/ && ls' \
+    curl='curl --no-progress-meter' \
+    n='nvim ~/vimwiki/index.wiki' \
 
 #Programs n other
 alias \
-	gparted='sudo gparted' \
     fm='pcmanfm' \
-    gs='git status' \
-    ga='git add' \
-    gm='git commit -m' \
-    gp='git push' \
     sst='sudo systemctl' \
     cdf='~/files/programs/problems/codeforces' \
     cdp='~/files/programs' \
@@ -156,7 +165,6 @@ alias \
     ao='ao && exit' \
     rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'" \
     pkgsizesort='expac "%n %m" -l"\n" -Q $(pacman -Qq) | sort -rhk 2' \
-    scim="sc-im" \
     ytm="ytfzf -m" \
     ytdw="ytfzf -d" \
     mpm="mpv --no-video" \
@@ -164,31 +172,24 @@ alias \
     ysu="yay -Syu" \
     ysur="yay --noconfirm -Syu && reboot" \
     ysus="yay --noconfirm -Syu && shutdown now" \
-    asg="sudo pacman -Sg | grep archstrike" \
     asgg="sudo pacman -Sgg | grep " \
-    5m="termdown 5m && notify-send '5 minutes over'" \
-    10m="termdown 10m && notify-send '10 minutes over'" \
-    1h="termdown 1h && notify-send '1 hour over'" \
-    2h="termdown 2h && notify-send '2 hours over'" \
-    tm="termdown" \
     ytmp3="yt-dlp -f 'ba' -x --audio-format mp3 -o '%(title)s.%(ext)s'" \
     ytmp4="yt-dlp -S res,ext:mp4:m4a --recode mp4" \
     ytmp3fzf='ytmp3 $(ytfzf --type=all -L)' \
+    tekk="mpv --volume=90 --shuffle ~/wake/*" \
+    chil="mpv --volume=50 --shuffle ~/chill/*" \
 
 alias \
-    newv="python -m venv venv" \
-    ppip="python -m pip install" \
-    src="source" \
-    dct="deactivate" \
-    srcw="source venv/bin/activate" \
     pycharm="export _JAVA_AWT_WM_NONREPARENTING=1; setsid pycharm; exit" \
     delnvimswap="rm ~/.local/state/nvim/swap/*" \
-    emoji="v ~/.local/share/airice/chars/emoji" \
+    emoji="v ~/.local/share/air/chars/emoji" \
     med="mpv ~/meditation.mp4 breathing.mp4" \
     codiumext="codium --list-extensions > ~/.config/VSCodium/User/codium_extensions_list" \
 	lf="lfub" \
     sxb="sxiv -tf *" \
     ccl="cd && clear && ls" \
+    ppf="systemctl --user restart pipewire && sleep 2 && killall wireplumber" \
+    brs="setsid -f st -e browser-sync -b surf -w ." \
 	#ref="shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc" \
 	#magit="nvim -c MagitOnly" \
 	#weath="less -S ${XDG_DATA_HOME:-$HOME/.local/share}/weatherreport" \

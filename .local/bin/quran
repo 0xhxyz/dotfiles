@@ -1,2 +1,0 @@
-#!/bin/sh
-setsid zathura ~/files/books/quran.pdf &

@@ -1,8 +1,0 @@
-#!/bin/sh
-clip=$(echo $(tac /tmp/.clipboard | dmenu -i -l 30))
-
-[ -z "$clip" ] && exit
-
-printf $clip | xclip -sel c
-notify-send "'$clip' copied to clipboard 📋."
-

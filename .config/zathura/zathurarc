@@ -13,3 +13,6 @@ map J zoom out
 map i recolor
 map p print
 map g goto top
+set recolor false
+set default-bg \#ffffff
+

@@ -8,52 +8,65 @@ if ! filereadable(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/autolo
 	autocmd VimEnter * PlugInstall
 endif
 
-map ,, :keepp /<++><CR>ca<
-imap ,, <esc>:keepp /<++><CR>ca<
-
 call plug#begin(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/plugged"'))
-Plug 'lifepillar/vim-gruvbox8'
-Plug 'preservim/nerdtree'
-Plug 'junegunn/goyo.vim'
-Plug 'airblade/vim-gitgutter'
-"Plug 'jreybert/vimagit'
-Plug 'itchyny/lightline.vim'
+Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-commentary'
-Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
+Plug 'preservim/nerdtree'
 Plug 'andweeb/presence.nvim'
+Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'Yggdroot/indentLine'
 Plug 'ervandew/supertab'
-Plug 'vim-syntastic/syntastic'
-"Plug 'jackMort/ChatGPT.nvim'
+Plug 'alvan/vim-closetag'
+Plug 'tpope/vim-surround'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
+" Plug 'vim-syntastic/syntastic'
+" Plug 'tpope/vim-surround'
+" Plug 'airblade/vim-gitgutter'
+" Plug 'jreybert/vimagit'
 
-let g:Hexokinase_highlighters = ['backgroundfull']
+" coc config
+let g:coc_global_extensions = [
+  \ 'coc-snippets',
+  \ 'coc-pairs',
+  \ 'coc-tsserver',
+  \ 'coc-html',
+  \ 'coc-css',
+  \ 'coc-json',
+  \ ]
 
+map <C-n> :NERDTreeToggle<CR>
+let g:NERDTreeDirArrowExpandable = '>'
+let g:NERDTreeDirArrowCollapsible = 'v'
+let g:NERDTreeNodeDelimiter = "\u00a0"
+" au VimEnter *  NERDTree
 
-let g:gruvbox_termcolors=16
-set bg=dark
-let g:gruvbox_italic=0
-colo gruvbox8
+set termguicolors
+syntax off
+let g:Hexokinase_highlighters = ['background']
+highlight LineNr term=bold cterm=NONE ctermfg=Grey ctermbg=NONE gui=NONE guifg=Grey guibg=NONE
+
+"Enable italic styling for strings
+highlight String cterm=italic gui=italic
+
 autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE
-
 
 set hlsearch
 set incsearch
-
 set clipboard=unnamedplus
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-set termguicolors
 set expandtab
 set autoindent
 set smartindent
 set fileformat=unix
 set mouse=a
-
 nnoremap c "_c
 set nocompatible
 filetype plugin on
-syntax on
 set encoding=utf-8
 set number
 
@@ -64,10 +77,9 @@ vnoremap n :norm<Space>
 vnoremap a :norm<Space>0i//<CR>
 vnoremap . :norm .<CR>
 
-map <C-n> :NERDTreeToggle<CR>
-
-map <leader>f :Goyo \| set bg=dark \| set linebreak<CR>
-
+" Remap the Tab key for indentation in visual mode
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
 set splitbelow splitright
 map <C-h> <C-w>h
 map <C-j> <C-w>j
@@ -84,8 +96,60 @@ nnoremap <silent> <C-t> :tabnew<CR>
 
 autocmd BufWritePre * %s/\s\+$//e
 
+cabbrev brs !setsid -f st -e browser-sync -b surf -w .
 cabbrev w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 
 autocmd BufWritePost config.h,config.def.h !sudo make install
 
 autocmd BufWritePost ~/.local/src/dwmblocks/config.h !cd ~/.local/src/dwmblocks/; sudo make install && { killall -q dwmblocks;setsid -f dwmblocks }
+
+"map ,, :keepp /<++><CR>ca<
+"imap ,, <esc>:keepp /<++><CR>ca<
+
+
+" vim-closetag options
+
+" filenames like *.xml, *.html, *.xhtml, ...
+" These are the file extensions where this plugin is enabled.
+"
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml, *.js'
+
+" filenames like *.xml, *.xhtml, ...
+" This will make the list of non-closing tags self-closing in the specified files.
+"
+let g:closetag_xhtml_filenames = '*.xhtml,*.jsx, *.js'
+
+" filetypes like xml, html, xhtml, ...
+" These are the file types where this plugin is enabled.
+"
+let g:closetag_filetypes = 'html,xhtml,phtml,js'
+
+" filetypes like xml, xhtml, ...
+" This will make the list of non-closing tags self-closing in the specified files.
+"
+let g:closetag_xhtml_filetypes = 'xhtml,jsx,js'
+
+" integer value [0|1]
+" This will make the list of non-closing tags case-sensitive (e.g. `<Link>` will be closed while `<link>` won't.)
+"
+let g:closetag_emptyTags_caseSensitive = 1
+
+" dict
+" Disables auto-close if not in a "valid" region (based on filetype)
+"
+let g:closetag_regions = {
+    \ 'typescript.tsx': 'jsxRegion,tsxRegion',
+    \ 'javascript.jsx': 'jsxRegion',
+    \ 'typescriptreact': 'jsxRegion,tsxRegion',
+    \ 'javascriptreact': 'jsxRegion',
+    \ }
+
+" Shortcut for closing tags, default is '>'
+"
+let g:closetag_shortcut = '>'
+
+" Add > at current position without closing the current tag, default is ''
+"
+let g:closetag_close_shortcut = '<leader>>'
+
+

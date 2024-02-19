@@ -37,19 +37,19 @@
   --home-button-position: center; /* Position of home button image | DEAFULT: center */
 
   /* Brightness variables */
-  --serverlist-brightness: 0.9; /* Brightness for serverlist | 0 - 1 (decimals allowed) | DEFAULT: 0.8 */
-  --left-brightness: 0.9; /* Channels and DM list brightness | 0 - 1 (decimals allowed) | DEFAULT: 0.8 */
-  --middle-brightness: 0.8; /* Chat brightness | 0 - 1 (decimals allowed) | DEFAULT: 0.6 */
+  --serverlist-brightness: 0; /* Brightness for serverlist | 0 - 1 (decimals allowed) | DEFAULT: 0.8 */
+  --left-brightness: 0; /* Channels and DM list brightness | 0 - 1 (decimals allowed) | DEFAULT: 0.8 */
+  --middle-brightness: 0; /* Chat brightness | 0 - 1 (decimals allowed) | DEFAULT: 0.6 */
   --right-brightness: 0; /* Members and Now Playing brightness | 0 - 1 (decimals allowed) | DEFAULT: 0 */
-  --popout-modal-brightness: 0.75; /* Brightness for popouts and modals | 0 - 1 (decimals allowed) | DEFAULT: 0.75 */
+  --popout-modal-brightness: 0; /* Brightness for popouts and modals | 0 - 1 (decimals allowed) | DEFAULT: 0.75 */
 
   /* Gradient variables */
-  --gradient-primary: 0,0,0; /* DEFAULT: 103,58,183 */
-  --gradient-secondary: 0,0,0; /* DEFAULT: 63,81,181 */
+  --gradient-primary: 255,255,255; /* DEFAULT: 103,58,183 */
+  --gradient-secondary: 255,255,255; /* DEFAULT: 63,81,181 */
   --gradient-direction: 320deg; /* DEFAULT: 320deg */
 
   /* Tint variables */
-  --tint-colour: 255,51,159; /* Colour of tint | DEAFULT: 255,51,159 */
+  --tint-colour: 0,0,0; /* Colour of tint | DEAFULT: 255,51,159 */
   --tint-brightness: 0; /* Brightness of --tint-colour | 0 - 1 (decimals allowed) | DEFAULT: 0 */
 
   /* Other variables */
@@ -62,7 +62,7 @@
     Visit https://fonts.google.com and select one to your liking.
     Now just follow this tutorial: https://imgur.com/a/CNbw7xC
   */
-  --font: 'Whitney';
+  --font: 'noto sans';
 
   /* Do not touch */
   --update-notice-1: none;

@@ -5,9 +5,11 @@ text/plain=org.gnome.gedit.desktop
 application/x-shellscript=leafpad.desktop
 x-scheme-handler/discord-448016723057049601=discord-448016723057049601.desktop
 inode/directory=pcmanfm.desktop
+image/jpeg=sxiv.desktop
 
 [Added Associations]
 application/pdf=org.pwmt.zathura-pdf-mupdf.desktop;
 text/plain=org.gnome.gedit.desktop;
 application/x-shellscript=org.gnome.gedit.desktop;org.kde.kate.desktop;leafpad.desktop;
 inode/directory=pcmanfm.desktop
+image/jpeg=sxiv.desktop;

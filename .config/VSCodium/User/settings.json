@@ -2,7 +2,6 @@
     "window.zoomLevel": -1,
     "workbench.iconTheme": "material-icon-theme",
     "git.openRepositoryInParentFolders": "never",
-    "workbench.colorTheme": "Lambda Black",
     "code-runner.runInTerminal": true,
     "python.terminal.activateEnvInCurrentTerminal": true,
     "workbench.startupEditor": "none",
@@ -11,5 +10,12 @@
     "explorer.confirmDelete": false,
     "fiveServer.browser": [
         "surf"
-    ]
+    ],
+    "darkLight.showNotification": false,
+    "workbench.colorTheme": "Black Waves",
+    "workbench.preferredDarkColorTheme": "Black Waves",
+    "workbench.preferredLightColorTheme": "E-Ink",
+    "editor.minimap.enabled": false,
+    "editor.minimap.autohide": true,
+    "editor.linkedEditing": true
 }

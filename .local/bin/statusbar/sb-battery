@@ -2,7 +2,7 @@
 
 case $BLOCK_BUTTON in
 	1) setsid -f "$TERMINAL" -e sudo powertop ;;
-	# 1) notify-send "⚡scroll to change adjust xbacklight⚡" ;;
+	# 1) notify-send "scroll to change adjust xbacklight" ;;
 	# 4) xbacklight -inc 10 ;;
 	# 5) xbacklight -dec 10 ;;
 	6) "$TERMINAL" -e "$EDITOR" "$0" ;;
@@ -14,19 +14,19 @@ if [ -f /sys/class/power_supply/BAT0/uevent ]; then
 	charging=$(cat /sys/class/power_supply/BAT0/uevent | grep "POWER_SUPPLY_STATUS" | cut -d'=' -f2)
 	# POWER_SUPPLY_STATUS=Discharging|Charging
 	case "$charging" in
-		"Full") icon="⚡" ;;
+		"Full") icon="C" ;;
 		"Discharging")
 		case "$prct" in
-			[0-9]|1[0-9]|20) icon="🪫 " ;;
-			2[1-9]|3[0-9]|40) icon="🪫 " ;;
-			4[1-9]|5[0-9]|60) icon="🔋 " ;;
-			6[1-9]|7[0-9]|80) icon="🔋 " ;;
-			8[1-9]|9[0-9]|100) icon="🔋 " ;;
-			*) icon="❓" ;
-		esac && [ "$prct" -le 25 ] && printf "⚠️ ";;
-		*) icon="⚡" ;;
+			[0-9]|1[0-9]|20) icon="L " ;;
+			2[1-9]|3[0-9]|40) icon="L " ;;
+			4[1-9]|5[0-9]|60) icon="M " ;;
+			6[1-9]|7[0-9]|80) icon="H " ;;
+			8[1-9]|9[0-9]|100) icon="H " ;;
+			*) icon="?" ;
+		esac && [ "$prct" -le 25 ] && printf "!!";;
+		*) icon="C" ;;
 	esac
 	echo -n "${icon}${prct}%"
 else
-	echo -n "🔌Plug" # Plugged
+	echo -n "Pl" # Plugged
 fi

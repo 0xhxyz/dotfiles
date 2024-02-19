@@ -15,4 +15,9 @@ else
 fi
 
 #exec i3
-exec dwm
+#exec dwm
+
+while true
+    do
+    /usr/local/bin/dwm 2> /dev/null
+done

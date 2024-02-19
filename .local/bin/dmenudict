@@ -1,12 +1,14 @@
 #!/bin/bash
 
 CLIP=$(xclip -o)
-RET=$(echo -e "📋 clipboard\ncancel" | dmenu)
+SEL=$(xsel)
+RET=$(echo -e "💡 selection\n📋 clipboard\ncancel" | dmenu)
 
 case $RET in
     #'📋 clipboard') setsid -f "$TERMINAL" -n spterm -g 120x34 -e dictsetsid $CLIP ;;
     #*) setsid -f "$TERMINAL" -n spterm -g 120x34 -e dictsetsid $RET
-    '📋 clipboard') setsid -f "$TERMINAL" -e dictsetsid $CLIP ;;
-    *) setsid -f "$TERMINAL" -e dictsetsid $RET
+    '📋 clipboard') setsid -f "$TERMINAL" -e dictsetsid "$CLIP" ;;
+    '💡 selection') setsid -f "$TERMINAL" -e dictsetsid "$SEL" ;;
+    *) setsid -f "$TERMINAL" -e dictsetsid "$RET"
 esac
 

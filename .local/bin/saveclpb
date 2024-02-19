@@ -1,5 +1,0 @@
-#!/bin/sh
-clip=$(xclip -o -sel c)
-
-echo $clip>> /tmp/.clipboard
-notify-send "'$clip' saved to temp clipboard 📋⏳."

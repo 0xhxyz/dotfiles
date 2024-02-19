@@ -6,7 +6,8 @@ case $RET in
     #'🔒 lock') slock ;;
 	'🛑 shutdown') sudo shutdown now ;;
 	'🟡 reboot') sudo reboot ;;
-	'🚪 logout') killall -9 dwm; killall -9 pipewire-pulse ; killall -9 pipewire ; killall -9 wireplumber ;;
-	#'🚪 logout') killall -9 pipewire-pulse ; killall -9 pipewire ; killall -9 wireplumber ; loginctl kill-session self ;;
+	'🚪 logout') killall -9 startx ;;
+	# '🚪 logout') killall -9 dwm; killall -9 pipewire-pulse ; killall -9 pipewire ; killall -9 wireplumber ;;
+	# '🚪 logout') killall -9 pipewire-pulse ; killall -9 pipewire ; killall -9 wireplumber ; loginctl kill-session self ;;
 	*) ;;
 esac

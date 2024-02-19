@@ -4,7 +4,9 @@ case $BLOCK_BUTTON in
     1) redshift -O 5000 ;;
 	2) redshift -x ;;
 	3) redshift -O 10000;;
+	4) redshift -O 5000 ;;
+	5) redshift -O 10000;;
     6) "$TERMINAL" -e "$EDITOR" "$0" ;;
 esac
 
-echo -n '👀🔦'
+echo -n 'Rs'

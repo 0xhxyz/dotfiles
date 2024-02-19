@@ -1,15 +1,28 @@
 #!/bin/bash
 
-sed -i 's/Fajr/🌄-Fajr/g' ~/.prayertimes
-sed -i 's/Sunrise/🌅-Sunrise/g' ~/.prayertimes
-sed -i 's/Dhuhr/🏙️-Dhuhr/g' ~/.prayertimes
-sed -i 's/Asr/🛣️-Asr/g' ~/.prayertimes
-sed -i 's/Sunset/🌇-Sunset/g' ~/.prayertimes
-sed -i 's/Maghrib/🌇-Maghrib/g' ~/.prayertimes
-sed -i 's/Isha/🌆-Isha/g' ~/.prayertimes
-sed -i 's/Imsak/🌉-Imsak/g' ~/.prayertimes
+fajr=$(sed -n '1p' ~/.prayert)
+duhr=$(sed -n '2p' ~/.prayert)
+asr=$(sed -n '3p' ~/.prayert)
+magr=$(sed -n '4p' ~/.prayert)
+isha=$(sed -n '5p' ~/.prayert)
 
-cat ~/.prayertimes | jq . | head -13 | tail -8 | sed 's/"//g' | sed 's/,//g' | sed 's/ //g'
+echo 'Fajr:     '$fajr
+echo 'Dhuhr:    '$duhr
+echo 'Asr:      '$asr
+echo 'Maghrib:  '$magr
+echo 'Isha:     '$isha
 
-curl -s --output ~/.prayertimes "https://api.aladhan.com/v1/timingsByAddress/$(date +%d-%m-%Y)?address=Tunis,%20Tunisia&method=99&methodSettings=18.0,null,18.0"
+
+
+# Old Method, using aladhan API
+# sed -i 's/Fajr/Fajr/g' ~/.prayertimes
+# sed -i 's/Sunrise/Sunrise/g' ~/.prayertimes
+# sed -i 's/Dhuhr/Dhuhr/g' ~/.prayertimes
+# sed -i 's/Asr/Asr/g' ~/.prayertimes
+# sed -i 's/Sunset/Sunset/g' ~/.prayertimes
+# sed -i 's/Maghrib/Maghrib/g' ~/.prayertimes
+# sed -i 's/Isha/Isha/g' ~/.prayertimes
+# sed -i 's/Imsak/Imsak/g' ~/.prayertimes
+
+# cat ~/.prayertimes | jq . | head -13 | tail -8 | sed 's/"//g' | sed 's/,//g' | sed 's/ //g'
 
