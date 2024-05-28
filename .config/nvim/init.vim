@@ -98,6 +98,7 @@ autocmd BufWritePre * %s/\s\+$//e
 
 cabbrev brs !setsid -f st -e browser-sync -b surf -w .
 cabbrev w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
+cabbrev grf !groff -ms -Tpdf -tle % > %:r.pdf
 
 autocmd BufWritePost config.h,config.def.h !sudo make install
 

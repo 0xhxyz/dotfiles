@@ -1,9 +1,10 @@
 #!/bin/bash
 
-RET=$(echo -e "🛑 shutdown\n🟡 reboot\n🚪 logout\ncancel" | dmenu )
+RET=$(echo -e "🔒 lock\n⚪ suspend\n🛑 shutdown\n🟡 reboot\n🚪 logout\ncancel" | dmenu )
 
 case $RET in
-    #'🔒 lock') slock ;;
+    '🔒 lock') setsid -f slock; setsid -f sudo xset s activate ;;
+    '⚪ suspend') setsid -f slock; systemctl suspend ;;
 	'🛑 shutdown') sudo shutdown now ;;
 	'🟡 reboot') sudo reboot ;;
 	'🚪 logout') killall -9 startx ;;

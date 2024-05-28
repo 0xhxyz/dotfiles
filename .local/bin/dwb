@@ -36,7 +36,7 @@ black() {
 
     bgrndrf 0
 
-    brightnessctl set 13%
+    brightnessctl set 33%
 
     sudo cp -f /usr/local/bin/dwmb /usr/local/bin/dwm
     sudo cp -f /usr/local/bin/stb /usr/local/bin/st

@@ -21,7 +21,7 @@ setsid -f st -e nvim ~/vimwiki/index.wiki
 # setsid -f pipewire
 
 # mpd
-autostart="picom dunst clipmenud firefox"
+autostart="xcompmgr dunst clipmenud firefox"
 
 for program in $autostart; do
 	pidof -s "$program" || "$program" &

@@ -82,6 +82,10 @@ bindkey -s '^f' '^ucd "$(dirname "$(fzf)")"\n'
 
 bindkey -s '^x' '^uao\n'
 
+alias opennewterm="st >/dev/null 2>&1 & disown"
+
+bindkey -s "^[n" "opennewterm\n"
+
 bindkey '^[[P' delete-char
 
 # Edit line in vim with ctrl-e:
@@ -176,8 +180,12 @@ alias \
     ytmp3="yt-dlp -f 'ba' -x --audio-format mp3 -o '%(title)s.%(ext)s'" \
     ytmp4="yt-dlp -S res,ext:mp4:m4a --recode mp4" \
     ytmp3fzf='ytmp3 $(ytfzf --type=all -L)' \
-    tekk="mpv --volume=90 --shuffle ~/wake/*" \
     chil="mpv --volume=50 --shuffle ~/chill/*" \
+    mvimg="sudo cp /home/air/camera/* /mnt" \
+    cdwindes="cd /mnt/Users/user/Desktop" \
+    # diff="rsync -r --ignore-existing -i -n ~/kgjdf/ /mnt/Users/user/Desktop/kgjfkd" \
+    # sync="rsync -avu ~/kjfjs/ /mnt/Users/user/Desktop/jfks" \
+    # booksync="rsync -avu ~/books/ /mnt/Users/user/Desktop/books" \
 
 alias \
     pycharm="export _JAVA_AWT_WM_NONREPARENTING=1; setsid pycharm; exit" \
@@ -190,6 +198,7 @@ alias \
     ccl="cd && clear && ls" \
     ppf="systemctl --user restart pipewire && sleep 2 && killall wireplumber" \
     brs="setsid -f st -e browser-sync -b surf -w ." \
+    oraxe="docker run -d --name oraclexe -p 1521:1521 -v dbvolume:/u01/app/oracle/oradata oracleinanutshell/oracle-xe-11g" \
 	#ref="shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc" \
 	#magit="nvim -c MagitOnly" \
 	#weath="less -S ${XDG_DATA_HOME:-$HOME/.local/share}/weatherreport" \

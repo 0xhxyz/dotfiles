@@ -23,23 +23,29 @@ isha=$(time_to_min "$(sed -n '5p' ~/.prayert)")
 # Determining the next prayer
 if [ "$curr" -le "$fajr" ]; then
     next=$fajr
-    prayer="F"
+    prayer="Fajr"
+    icon="F"
 elif [ "$curr" -le "$duhr" ]; then
     next=$duhr
-    prayer="D"
+    prayer="Dhuhr"
+    icon="D"
 elif [ "$curr" -le "$asr" ]; then
     next=$asr
-    prayer="A"
+    prayer="Asr"
+    icon="A"
 elif [ "$curr" -le "$magr" ]; then
     next=$magr
-    prayer="M"
+    prayer="Maghrib"
+    icon="M"
 elif [ "$curr" -le "$isha" ]; then
     next=$isha
-    prayer="I"
+    prayer="Isha"
+    icon="I"
 else
     curr=$(($fajr + 1440 - $curr))
     next=$(($curr * 2))
-    prayer="F"
+    prayer="Fajr"
+    icon="F"
 fi
 
 # Function to convert minutes to "hh:mm" format
@@ -54,12 +60,12 @@ dif=$(($next - $curr))
 
 # Reminder Notifications when getting close to prayer
 if [ "$dif" -eq 15 ]; then
-    notify-send --urgency critical "Prayer is in 15 minutes" "Do Wudhu If you have not yet"
+    notify-send --urgency critical "$prayer in 15 minutes"
 elif [ "$dif" -eq 5 ]; then
-    notify-send --urgency critical "It is Time to Pray $prayer" "Leave what You\'re doing And Go Pray"
+    notify-send --urgency critical "$prayer"
 fi
 
 
 left=$(min_to_hh_mm "$dif")
 
-echo "$left$prayer"
+echo "$left$icon"

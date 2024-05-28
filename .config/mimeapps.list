@@ -13,3 +13,4 @@ text/plain=org.gnome.gedit.desktop;
 application/x-shellscript=org.gnome.gedit.desktop;org.kde.kate.desktop;leafpad.desktop;
 inode/directory=pcmanfm.desktop
 image/jpeg=sxiv.desktop;
+application/x-zerosize=leafpad.desktop;

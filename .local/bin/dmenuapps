@@ -1,13 +1,13 @@
 #!/bin/bash
 
-# RET=$(echo -e "🔴 ytm\n📙 ncmpcpp\ncancel" | dmenu -i )
-# RET=$(echo -e "🟠 newsboat\ncancel" | dmenu -i )
-RET=$(echo -e "🔵 discord\n🟠 newsboat\ncancel" | dmenu -i )
+# RET=$(echo -e "🟢 whatsapp\n🔵 discord\n🟠 newsboat\ncancel" | dmenu -i )
+RET=$(echo -e "🔴 ytmpv\n🔴 ytm\n🟠 newsboat\n🔵 discord\n🟢 whatsapp\ncancel" | dmenu -i )
 
 case $RET in
-#    '🔴 ytm') killall mpv ; mpv --input-ipc-server=/tmp/mpvsocket --volume=100 --no-video $(ytfzf --type=all -L -D) ;;
+    '🔴 ytm') killall mpv ; mpv --input-ipc-server=/tmp/mpvsocket --volume=80 --no-video $(ytfzf --type=all -L -D) ;;
+    '🔴 ytmpv') setsid -f mpv --volume=80 $(xclip -o) ;;
     '🔵 discord') setsid -f discord ;;
-    # '🟢 x') x ;;
+    '🟢 whatsapp') setsid -f whatsapp-for-linux ;;
     '🟠 newsboat') $TERMINAL -e newsboat ;;
     *) ;;
 esac
